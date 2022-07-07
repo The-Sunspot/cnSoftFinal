@@ -9,7 +9,7 @@ void AdvancedCalculator::doCalculate(condition_variable &cv, unique_lock<std::mu
 {
     auto be = std::chrono::steady_clock::now();
     // send part
-    auto calculateBegin = std::chrono::steady_clock().now();
+    auto calculateBegin = std::chrono::steady_clock::now();
 
     //核心计算算法第一步
     {
@@ -124,6 +124,7 @@ void AdvancedCalculator::partTabelCommunicate(condition_variable &cv, unique_loc
         if (i % 10000 == 0)
         {
             //降低send速度，减轻io压力
+            //可以根据具体环境配置进行调整
             this_thread::sleep_for(std::chrono::milliseconds(200));
 
             //进度条

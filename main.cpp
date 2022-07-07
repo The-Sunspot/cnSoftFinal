@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
 
     //计算类实例
     // AdvancedCalculator为Calculator子类，是演变后的计算类，更快空间更小
+    // 详情请见类代码注释
     // Calculator calculator(totalData, reader);
     AdvancedCalculator calculator(totalData, reader);
 

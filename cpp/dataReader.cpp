@@ -18,6 +18,7 @@ using namespace std;
 //初始化
 dataReader::dataReader(int index, int n, bool isTesting) : totalProgramCount(n), index(index)
 {
+    //测试用数据集，可以忽略
     if (isTesting)
     {
         partFileNames[0] = R"(../data/testGoods)";
