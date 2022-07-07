@@ -1,0 +1,3 @@
+/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/rebuild_cache.dir
+/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/edit_cache.dir
+/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir

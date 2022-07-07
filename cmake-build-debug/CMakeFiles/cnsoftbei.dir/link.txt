@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cnsoftbei.dir/objects.a
+D:\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2\mingw64\bin\ar.exe qc CMakeFiles\cnsoftbei.dir/objects.a @CMakeFiles\cnsoftbei.dir\objects1.rsp
+D:\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2\mingw64\bin\g++.exe  -O3  -g -static -Wl,--whole-archive CMakeFiles\cnsoftbei.dir/objects.a -Wl,--no-whole-archive -o ..\bin\cnsoftbei.exe -Wl,--out-implib,..\bin\libcnsoftbei.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cnsoftbei.dir\linklibs.rsp
