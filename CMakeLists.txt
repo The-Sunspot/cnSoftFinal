@@ -13,7 +13,6 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 ")
 aux_source_directory(./cpp cppfiles)
 aux_source_directory(./head headfiles)
 
-# add_executable(cnsoftbei main.cpp cpp/Part.cpp head/Part.h head/Lineitem.h cpp/dataReader.cpp head/dataReader.h cpp/Utils.cpp head/Utils.h cpp/ZipPart.cpp head/ZipPart.h cpp/ZipOrder.cpp head/ZipOrder.h cpp/PartData.cpp head/PartData.h cpp/BrandData.cpp head/BrandData.h cpp/TotalData.cpp head/TotalData.h cpp/Calculator.cpp head/Calculator.h cpp/server.cpp head/server.h cpp/client.cpp head/client.h head/message.h)
 add_executable(cnsoftbei main.cpp ${cppfiles} ${headfiles} cpp/AdvancedCalculator.cpp head/AdvancedCalculator.h)
 
 target_compile_options(cnsoftbei PUBLIC -DASIO_STANDALONE)

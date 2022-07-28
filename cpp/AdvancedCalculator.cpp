@@ -53,16 +53,7 @@ void AdvancedCalculator::doCalculate(condition_variable &cv, unique_lock<std::mu
     if (this->index == 1)
     {
         getTotalDatas();
-        double avg = totalData.getAvg();
-        std::cout << "-------------------------------------------------\n";
-        std::cout << std::fixed << std::setprecision(4);
-        std::cout << "totalSales:" << totalData.totalSales << "\n";
-        std::cout << "totalPartCount:" << totalData.partCount << "\n";
-        std::cout << "avg:" << avg << "\n";
-        std::cout << "-------------------------------------------------\n";
         totalData.calculateUnderSale();
-        totalData.outputUnderSale();
-        std::cout << "-------------------------------------------------" << std::endl;
     }
     else
     {

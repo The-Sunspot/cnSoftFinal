@@ -248,6 +248,30 @@ cpp/PartData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.s
 .PHONY : cpp/PartData.cpp.s
 
+cpp/QueryResponser.obj: cpp/QueryResponser.cpp.obj
+.PHONY : cpp/QueryResponser.obj
+
+# target to build an object file
+cpp/QueryResponser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.obj
+.PHONY : cpp/QueryResponser.cpp.obj
+
+cpp/QueryResponser.i: cpp/QueryResponser.cpp.i
+.PHONY : cpp/QueryResponser.i
+
+# target to preprocess a source file
+cpp/QueryResponser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.i
+.PHONY : cpp/QueryResponser.cpp.i
+
+cpp/QueryResponser.s: cpp/QueryResponser.cpp.s
+.PHONY : cpp/QueryResponser.s
+
+# target to generate assembly for a file
+cpp/QueryResponser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.s
+.PHONY : cpp/QueryResponser.cpp.s
+
 cpp/TotalData.obj: cpp/TotalData.cpp.obj
 .PHONY : cpp/TotalData.obj
 
@@ -488,6 +512,9 @@ help:
 	@echo ... cpp/PartData.obj
 	@echo ... cpp/PartData.i
 	@echo ... cpp/PartData.s
+	@echo ... cpp/QueryResponser.obj
+	@echo ... cpp/QueryResponser.i
+	@echo ... cpp/QueryResponser.s
 	@echo ... cpp/TotalData.obj
 	@echo ... cpp/TotalData.i
 	@echo ... cpp/TotalData.s

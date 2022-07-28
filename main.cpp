@@ -14,6 +14,7 @@
 #include <mutex>
 #include <condition_variable>
 #include "head/AdvancedCalculator.h"
+#include "head/QueryResponser.h"
 
 using namespace std;
 const int serverPort[] = {0, 8001, 8002, 8003, 8004};
@@ -63,6 +64,9 @@ int main(int argc, char *argv[])
     //接发信息类实例，
     server loadMessager(serverPort[index], cv, calculator, totalData);
     client *sendMessager = nullptr; // 1号实例顺序不同，暂不能赋值
+
+    //查询响应器
+    QueryResponser queryResponser(calculator,totalData);
 
     string s;
     // load
@@ -137,7 +141,7 @@ int main(int argc, char *argv[])
         cv.wait(lck);
         //计算
         calculator.doCalculate(cv, lck);
-
+        queryResponser.printSaleInfo();
         //交互部分
         cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
         cout
@@ -174,7 +178,8 @@ int main(int argc, char *argv[])
                 else
                 {
                     //合法，输出。
-                    totalData.outputUnderSale(brand);
+                    queryResponser.selectBrand(brand);
+                    //totalData.outputUnderSale(brand);
                     cout << "input:";
                 }
             }

@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.obj.d"
   "CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.obj"
   "CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.obj.d"
+  "CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.obj"
+  "CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.obj.d"
   "CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.obj"
   "CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.obj.d"
   "CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.obj"

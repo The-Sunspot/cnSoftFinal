@@ -97,6 +97,9 @@
 		<Unit filename="D:/ClionCode/ccc/cpp/PartData.cpp">
 			<Option target="cnsoftbei"/>
 		</Unit>
+		<Unit filename="D:/ClionCode/ccc/cpp/QueryResponser.cpp">
+			<Option target="cnsoftbei"/>
+		</Unit>
 		<Unit filename="D:/ClionCode/ccc/cpp/TotalData.cpp">
 			<Option target="cnsoftbei"/>
 		</Unit>

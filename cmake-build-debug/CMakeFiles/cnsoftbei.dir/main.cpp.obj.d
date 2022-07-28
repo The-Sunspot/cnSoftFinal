@@ -961,4 +961,5 @@ CMakeFiles/cnsoftbei.dir/main.cpp.obj: D:\ClionCode\ccc\main.cpp \
  D:\ClionCode\ccc\head/message.h D:\ClionCode\ccc\head/Utils.h \
  D:\ClionCode\ccc\head/Part.h D:\ClionCode\ccc\head/server.h \
  D:\ClionCode\ccc\head/Calculator.h D:\ClionCode\ccc\head/client.h \
- D:\ClionCode\ccc\head/Utils.h D:\ClionCode\ccc\head/AdvancedCalculator.h
+ D:\ClionCode\ccc\head/Utils.h D:\ClionCode\ccc\head/AdvancedCalculator.h \
+ D:\ClionCode\ccc\head/QueryResponser.h
