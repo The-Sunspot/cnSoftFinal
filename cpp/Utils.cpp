@@ -86,13 +86,11 @@ ZipOrder Utils::loadOrder(const char *line)
 //解析从数据中读入的一行零件
 ZipPart Utils::loadPart(const char *line)
 {
-    ZipPart zipPart = {0, {0, 0}};
+    ZipPart zipPart = {0, {0, 0},""};
     int cnt = 0;
     for (int j = 0;; j++)
     {
         char i = line[j];
-        if (i == '\0')
-            throw std::runtime_error{std::string("error in ZipPart Utils::loadPart(const char *line). error: string end before unZip")};
         if (i == '|')
             cnt++;
         else
@@ -108,9 +106,16 @@ ZipPart Utils::loadPart(const char *line)
                     else
                     {
                         zipPart.pBrandCode.second = i - '0';
-                        break;
+                        //break;
                     }
                 }
+            }
+            else if(cnt == 6){
+                while(line[j]!='|'){
+                    zipPart.pContainer+=line[j];
+                    j++;
+                }
+                break;
             }
         }
     }
@@ -124,7 +129,7 @@ std::string Utils::zipOrderToString(const ZipOrder &zipOrder)
 //序列化  zipPart->string
 std::string Utils::zipPartToString(const ZipPart &zipPart)
 {
-    return std::to_string(zipPart.pPartkey) + '|' + std::to_string(zipPart.pBrandCode.first) + '|' + std::to_string(zipPart.pBrandCode.second) + '|';
+    return std::to_string(zipPart.pPartkey) + '|' + std::to_string(zipPart.pBrandCode.first) + '|' + std::to_string(zipPart.pBrandCode.second) + '|' +zipPart.pContainer+'|';
 }
 
 //反序列化 char *->ZipPart
@@ -184,13 +189,15 @@ ZipPart Utils::unZipPartString(const std::string &line)
 //反序列化  char *->ZipPart
 ZipPart Utils::unZipPartString(const char *line)
 {
-    ZipPart zipPart = {0, {0, 0}};
+    ZipPart zipPart = {0, {0, 0},""};
     int cnt = 0;
-    for (int j = 0; cnt < 3; j++)
+    for (int j = 0;; j++)
     {
         char i = line[j];
-        if (i == '|')
+        if (i == '|'){
             cnt++;
+            if(cnt==4)  break;
+        }
         else
         {
             if (cnt == 0)
@@ -202,6 +209,9 @@ ZipPart Utils::unZipPartString(const char *line)
             else if (cnt == 2)
             {
                 zipPart.pBrandCode.second = i - '0';
+            }
+            else if(cnt == 3){
+                zipPart.pContainer += i;
             }
         }
     }
@@ -251,11 +261,12 @@ std::string Utils::zipPartData(const PartData &part) {
         +std::to_string(part.brandCode.first)
         +std::to_string(part.brandCode.second)
         +std::to_string(part.saleCount)+'|'
-        +std::to_string(part.totalSales);
+        +std::to_string(part.totalSales)+'|'
+        +part.container;
 }
 
 //反序列化 char*->PartData
-//id|12xxxxx|yyyyy
+//id|12xxxxx|yyyyy|zzzz
 PartData Utils::unzipPartData(const char *line) {
     int cnt=0;
     double base=1;
@@ -275,7 +286,7 @@ PartData Utils::unzipPartData(const char *line) {
                 } else {
                     part.saleCount = part.saleCount * 10 + line[i] - '0';
                 }
-            } else {
+            } else if(cnt==2){
                 if (dig) {
                     base /= 10;
                     part.totalSales += (line[i] - '0') * base;
@@ -283,6 +294,10 @@ PartData Utils::unzipPartData(const char *line) {
                     part.totalSales = part.totalSales * 10 + line[i] - '0';
                 }
             }
+            else{
+                part.container+=line[i];
+            }
+
         }
     }
     return part;

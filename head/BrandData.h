@@ -37,7 +37,7 @@ public:
     //所有零件销售额
     double brandSales=0;
     //根据订单更新信息
-    void updateData(ZipOrder &order);
+    void updateData(ZipOrder &order,const std::string &container);
     //根据partData更新信息
     void mergePartData(PartData &part);
     //插入一个不畅销产品
@@ -46,6 +46,8 @@ public:
     bool existThisPart(PartData &part);
     //输出这个品牌不畅销信息
     void outputUnderSale();
+    //输出满足container条件的信息
+    void outputUnderSaleByContainer(const std::string &container);
 };
 
 #endif // CNSOFTBEI_BRANDDATA_H

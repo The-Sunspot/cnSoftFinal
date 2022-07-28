@@ -31,6 +31,10 @@ public:
 
     //输出某个品牌的不畅销产品
     void outputUnderSale(std::pair<int,int>&brand);
+    //输出某个容器的不畅销
+    void outputUnderSaleByContainer(std::string &container);
+    //输出品牌+零件不畅销
+    void outputUnderSaleByBrandAndContainer(std::pair<int,int>&brand,std::string &container);
     //返回平均值
     double getAvg() const;
     //计算不畅销，并统计

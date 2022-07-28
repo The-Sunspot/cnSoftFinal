@@ -23,7 +23,7 @@ private:
     ip::tcp::acceptor acceptor;
 
     //缓冲部分
-    static const int bufferSize = 64;
+    static const int bufferSize = 84;
     char msgFromClient[bufferSize]{};
     char msgToClient[bufferSize]{};
 

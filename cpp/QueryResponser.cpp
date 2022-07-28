@@ -26,3 +26,11 @@ void QueryResponser::printSaleInfo() {
     totalData.outputUnderSale();
     std::cout << "-------------------------------------------------" << std::endl;
 }
+
+void QueryResponser::selectContainer(std::string container) {
+    totalData.outputUnderSaleByContainer(container);
+}
+
+void QueryResponser::selectBrandAndContainer(pair<int, int> &brand, string &container) {
+    totalData.outputUnderSaleByBrandAndContainer(brand,container);
+}

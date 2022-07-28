@@ -4,14 +4,14 @@
 
 #include "../head/BrandData.h"
 //根据订单更新信息
-void BrandData::updateData(ZipOrder &order) {
+void BrandData::updateData(ZipOrder &order,const std::string &container) {
     using namespace std;
     lock_guard lg(this->m_mtx);
     //第一次出现这个零件，就先加入
     if (!this->partIdHash.count(order.lPartkey))
     {
         this->partIdHash[order.lPartkey] = this->parts.size();
-        this->parts.emplace_back(PartData(order.lPartkey, {this->brandCode.first, this->brandCode.second}));
+        this->parts.emplace_back(PartData(order.lPartkey, {this->brandCode.first, this->brandCode.second},container));
     }
 
     //找到这个零件的统计数据
@@ -45,8 +45,16 @@ bool BrandData::existThisPart(PartData &part){
 }
 //输出这个品牌不畅销信息
 void BrandData::outputUnderSale(){
-    std::cout<<"id Sales SaleCount"<<std::endl;
+    std::cout<<"id Sales SaleCount Container"<<std::endl;
     for(auto &i:underSaleParts){
-        std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<std::endl;
+        std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<i.container<<std::endl;
+    }
+}
+
+void BrandData::outputUnderSaleByContainer(const std::string &container) {
+    std::cout<<"id Sales SaleCount Container"<<std::endl;
+    for(auto &i:underSaleParts){
+        if(i.container==container)
+            std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<i.container<<std::endl;
     }
 }

@@ -12,7 +12,7 @@ class message
 {
 private:
     static const int MAX_HEAD_LENGTH = 1;
-    static const int MAX_BODY_LENGTH = 62;
+    static const int MAX_BODY_LENGTH = 82;
     char head[MAX_HEAD_LENGTH + 1];                      //头
     char body[MAX_BODY_LENGTH + 1];                      //体
     char sendMsg[MAX_HEAD_LENGTH + MAX_BODY_LENGTH + 1]; //总

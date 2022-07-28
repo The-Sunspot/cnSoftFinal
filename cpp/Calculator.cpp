@@ -46,13 +46,14 @@ void Calculator::solveOrder(ZipOrder &order)
 
     //找到这个零件品牌对应的统计数据
     auto &targetBrandData = totalData.datas[brand.first - 1][brand.second - 1];
-    targetBrandData->updateData(order);
+    string container=reader.parts[reader.partIdHash[order.lPartkey]].pContainer;
+    targetBrandData->updateData(order,container);
     totalData.addLocalTotalSales(order.lQuantity);
 }
 //计算主控类
 void Calculator::doCalculate(condition_variable &cv, unique_lock<mutex> &lck)
 {
-    auto chroneBegin = std::chrono::steady_clock().now();
+    auto chroneBegin = std::chrono::steady_clock::now();
     cout << "calculate start" << endl;
     auto begin = clock();
     int cnt = 0;

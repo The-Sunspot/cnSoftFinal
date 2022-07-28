@@ -3,3 +3,11 @@
 //
 
 #include "../head/PartData.h"
+
+void PartData::setContainer(const std::string &container) {
+    PartData::container = container;
+}
+
+const std::string &PartData::getContainer() const {
+    return container;
+}

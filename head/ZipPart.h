@@ -15,6 +15,8 @@ public:
     int pPartkey;
     //品牌，1~5
     std::pair<int,int> pBrandCode;
+    //容器
+    std::string pContainer;
 };
 
 

@@ -17,7 +17,6 @@ public:
     int lQuantity;
     //销售额
     double lExtendedprice;
-    //容器
 
 };
 

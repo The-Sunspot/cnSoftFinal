@@ -22,7 +22,7 @@ private:
     ip::tcp::socket sock;
     ip::tcp::endpoint ep;
     //缓冲部分
-    static const int bufferSize = 64;
+    static const int bufferSize = 84;
     char msgToServer[bufferSize];
     char msgFromServer[bufferSize];
     // send同步锁

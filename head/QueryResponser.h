@@ -16,6 +16,8 @@ public:
     void printSaleInfo();
     void selectAll();
     void selectBrand(std::pair<int,int>&brand);
+    void selectContainer(std::string container);
+    void selectBrandAndContainer(std::pair<int,int>&brand,std::string&container);
 };
 
 
