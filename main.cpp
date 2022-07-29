@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
                                {
         while (getline(cin,s))
         {
-            cout<<"get s::"<<s<<endl;
+            // cout<<"get s::"<<s<<endl;
             if (!reader.load_flag)
             {
                 if (s != "load")
@@ -113,6 +113,7 @@ int main(int argc, char *argv[])
                 if (s == "q" || s == "quit")
                 {
                     cout << "goodbye" << endl;
+                    cv.notify_one();
                     break;
                 }
                 else
@@ -198,7 +199,8 @@ int main(int argc, char *argv[])
                 << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
                 << endl;
             cout << "input:";
-            interactThread.join();
+            // interactThread.join();
+            cv.wait(lck);
         }
         else
         {
@@ -228,7 +230,8 @@ int main(int argc, char *argv[])
                 << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
                 << endl;
             cout << "input:";
-            interactThread.join();
+            // interactThread.join();
+            cv.wait(lck);
         }
         else
         {

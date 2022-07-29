@@ -50,7 +50,7 @@ void AdvancedCalculator::doCalculate(condition_variable &cv, unique_lock<std::mu
 
     //主进程输出
 
-    if (this->index == 1)
+    if (this->index == select_idx)
     {
         getTotalDatas();
         totalData.calculateUnderSale();
