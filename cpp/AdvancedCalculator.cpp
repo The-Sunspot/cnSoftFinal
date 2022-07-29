@@ -116,7 +116,7 @@ void AdvancedCalculator::partTabelCommunicate(condition_variable &cv, unique_loc
         {
             //降低send速度，减轻io压力
             //可以根据具体环境配置进行调整
-            this_thread::sleep_for(std::chrono::milliseconds(300));
+            this_thread::sleep_for(std::chrono::milliseconds(1000));
 
             //进度条
             if (i % 50000 == 0)

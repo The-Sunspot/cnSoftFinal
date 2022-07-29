@@ -45,16 +45,16 @@ bool BrandData::existThisPart(PartData &part){
 }
 //输出这个品牌不畅销信息
 void BrandData::outputUnderSale(){
-    std::cout<<"id Sales SaleCount Container"<<std::endl;
+    //std::cout<<"id Sales SaleCount Brand Container"<<std::endl;
     for(auto &i:underSaleParts){
-        std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<i.container<<std::endl;
+        std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<"Brand#"<<i.brandCode.first*10+i.brandCode.second<<' '<<i.container<<std::endl;
     }
 }
 
 void BrandData::outputUnderSaleByContainer(const std::string &container) {
-    std::cout<<"id Sales SaleCount Container"<<std::endl;
+    //std::cout<<"id Sales SaleCount Brand Container"<<std::endl;
     for(auto &i:underSaleParts){
         if(i.container==container)
-            std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<i.container<<std::endl;
+            std::cout<<i.id<<" "<<i.totalSales<<" "<<i.saleCount<<" "<<"Brand#"<<i.brandCode.first*10+i.brandCode.second<<' '<<i.container<<std::endl;
     }
 }

@@ -2,19 +2,27 @@
 // Created by 光球层上的黑子 on 2022/6/15.
 //
 
-#include <sstream>
+#include<sstream>
+#include <tuple>
 #include <iostream>
+#include <string>
 #include "../head/Utils.h"
 //分割字符串，传入分隔符，类似于python的split
 std::vector<std::string> Utils::split(const std::string &str, const char ch)
 {
     std::vector<std::string> rec;
     std::string tmp;
+    bool inContainer=false;
     for (auto &i : str)
     {
-        if (i == ch)
+        if(i=='\''){
+            if(inContainer) inContainer= false;
+            else    inContainer=true;
+        }
+        else if (i == ch)
         {
-            if (tmp.length() >= 1)
+            if(inContainer) tmp+=i;
+            else if (tmp.length() >= 1)
             {
                 rec.emplace_back(tmp);
                 tmp.clear();
@@ -25,6 +33,7 @@ std::vector<std::string> Utils::split(const std::string &str, const char ch)
             tmp += i;
         }
     }
+    if(!tmp.empty())  rec.push_back(tmp);
     return rec;
 }
 
@@ -374,5 +383,127 @@ std::pair<int, int> Utils::judgeInput(const std::string &s) {
         return checkFunction(s[head.size()], s[head.size() + 1]);
     else
         return {-1, -1};
+}
+
+std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExtended(const std::string &s) {
+    //检查ch1和ch2是否为合法数字
+    //不为数字返回{-1,-1}，非法数字返回{INT_MAX，INT_MAX}，合法数字返回数字{ch1-'0',ch2-'0'}
+    auto checkFunction = [](char ch1, char ch2) -> std::pair<int, int>
+    {
+        if (std::isdigit(ch1) && std::isdigit(ch2))
+        {
+            // 12,33这类有效的
+            if (ch1 >= '1' && ch1 <= '5' && ch2 >= '1' && ch2 <= '5')
+                return {ch1 - '0', ch2 - '0'};
+                // 56,01这种无效的
+            else
+                return {INT_MAX, INT_MAX};
+        }
+        else
+        {
+            return {-1, -1};
+        }
+    };
+    auto isEqualIgnoreLowerOrUpper=[](const std::string &s1, const std::string &s2)->bool {
+        if(s1.size()!=s2.size())    return false;
+        for(int i=0;i<s1.size();i++){
+            if(std::isalpha(s1[i])&&std::isalpha(s2[i])){
+                if(tolower(s1[i])!= tolower(s2[i]))
+                    return false;
+            }
+            else {
+                if(s1[i]!=s2[i])
+                    return false;
+            }
+        }
+        return true;
+    };
+    auto getTrueQuery=[](const std::string &s)->std::string {
+        if(s.size()<2)  return s;
+        if(s[0]==s[s.size()-2]&&s[0]=='\''){}
+            return s.substr(1,s.size()-1);
+        return s;
+    };
+
+    using recType=std::tuple<std::string, std::pair<int, int>, std::string>;
+    const recType QUIT={"quit",{0,0},""};
+    const recType WRONGINPUT={"wrong",{-1,-1},""};
+    const recType RANDOM={"random",{0,0},""};
+    const recType INFO={"info",{0,0},""};
+    const recType ALL={"all",{0,0},""};
+    recType brand={"brand",{0,0},""};
+    recType container={"container",{0,0},""};
+    recType both={"both",{0,0},""};
+    if(s.empty()) return WRONGINPUT;
+
+    auto inputs=Utils::split(s,' ');
+
+    if(inputs.size()==1){
+        if(inputs[0]=="q"||inputs[0]=="quit"){
+            return QUIT;
+        }
+        if(inputs[0]=="random"){
+            return RANDOM;
+        }
+        if(inputs[0]=="info"){
+            return INFO;
+        }
+        if(inputs[0]=="select"||inputs[0]=="all"){
+            return ALL;
+        }
+        return WRONGINPUT;
+    }
+    else if(inputs.size()==3){
+        if(inputs[0]!="select"){
+            return WRONGINPUT;
+        }
+        if(isEqualIgnoreLowerOrUpper(inputs[1],"b")||isEqualIgnoreLowerOrUpper(inputs[1],"brand")){
+            if(inputs[2].size()!=2){
+                return WRONGINPUT;
+            }
+            std::get<1>(brand)=checkFunction(inputs[2][0],inputs[2][1]);
+            return brand;
+        }
+        else if(isEqualIgnoreLowerOrUpper(inputs[1],"c")||isEqualIgnoreLowerOrUpper(inputs[1],"container")){
+            std::get<2>(container)=getTrueQuery(inputs[2]);
+            return container;
+        }
+        else{
+            return WRONGINPUT;
+        }
+    }
+    else if(inputs.size()==5){
+        if(inputs[0]!="select"){
+            return WRONGINPUT;
+        }
+        if(
+                (isEqualIgnoreLowerOrUpper(inputs[1],"b")||isEqualIgnoreLowerOrUpper(inputs[1],"brand"))
+                &&(isEqualIgnoreLowerOrUpper(inputs[3],"c")||isEqualIgnoreLowerOrUpper(inputs[3],"container"))
+                ){
+            if(inputs[2].size()!=2){
+                return WRONGINPUT;
+            }
+            std::get<1>(both)=checkFunction(inputs[2][0],inputs[2][1]);
+            std::get<2>(both)=getTrueQuery(inputs[4]);
+            return both;
+        }
+        else if(
+                (isEqualIgnoreLowerOrUpper(inputs[1],"c")||isEqualIgnoreLowerOrUpper(inputs[1],"container"))
+                &&(isEqualIgnoreLowerOrUpper(inputs[3],"b")||isEqualIgnoreLowerOrUpper(inputs[3],"brand"))
+                ){
+            if(inputs[4].size()!=2){
+                return WRONGINPUT;
+            }
+            std::get<1>(both)=checkFunction(inputs[4][0],inputs[4][1]);
+            std::get<2>(both)=getTrueQuery(inputs[2]);
+            return both;
+        }
+        else{
+            return WRONGINPUT;
+        }
+    }
+    else{
+        return WRONGINPUT;
+    }
 }
 

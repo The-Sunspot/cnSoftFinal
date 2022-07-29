@@ -63,6 +63,8 @@ public:
     //检查输入的select语句是否合法，
     //非法格式返回{-1,-1}，非法数字返回{INT_MAX，INT_MAX}，合法格式返回数字{ch1-'0',ch2-'0'}
     static std::pair<int, int> judgeInput(const std::string &s);
+
+    static std::tuple<std::string,std::pair<int,int>,std::string> judgeInputExtended(const std::string &s);
 };
 
 #endif // CNSOFTBEI_UTILS_H

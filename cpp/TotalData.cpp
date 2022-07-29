@@ -171,17 +171,17 @@ void TotalData::outputUnderSaleByContainer(std::string &container) {
         {
             //调用品牌自己的输出函数
             auto &brandData = datas[i][j];
-            std::cout << "Brand#" << i + 1 << j + 1 << ": Sales: " << brandData->brandSales << " SaleCount: " << brandData->brandSaleCount << std::endl;
+            //std::cout << "Brand#" << i + 1 << j + 1 << ": Sales: " << brandData->brandSales << " SaleCount: " << brandData->brandSaleCount << std::endl;
             brandData->outputUnderSaleByContainer(container);
-            std::cout << "----------------------\n";
         }
     }
+    std::cout << "----------------------\n";
     std::cout << std::endl;
 }
 
 void TotalData::outputUnderSaleByBrandAndContainer(std::pair<int, int> &brand, std::string &container) {
     auto &brandData = datas[brand.first - 1][brand.second - 1];
-    std::cout << "Brand#" << brand.first << brand.second << ": Sales: " << brandData->brandSales << " SaleCount: " << brandData->brandSaleCount << std::endl;
+    //std::cout << "Brand#" << brand.first << brand.second << ": Sales: " << brandData->brandSales << " SaleCount: " << brandData->brandSaleCount << std::endl;
     brandData->outputUnderSaleByContainer(container);
     std::cout << "----------------------" << std::endl;
 }

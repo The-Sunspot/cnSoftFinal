@@ -74,7 +74,6 @@ int main(int argc, char *argv[])
                                {
         while (getline(cin,s))
         {
-            // cout<<"get s::"<<s<<endl;
             if (!reader.load_flag)
             {
                 if (s != "load")
@@ -109,36 +108,12 @@ int main(int argc, char *argv[])
                 //空行处理
                 if (s.empty() || s == "\n" || s == "\r\n")
                     continue;
-                //退出
-                if (s == "q" || s == "quit")
-                {
+                if(s=="q"||s=="quit"){
                     cout << "goodbye" << endl;
                     cv.notify_one();
                     break;
                 }
-                else
-                {
-                    //根据Utils::judgeInput判断是否合法，并给予提示
-                    auto brand = Utils::judgeInput(s);
-                    if (brand == make_pair(-1, -1))
-                    {
-                        cout << R"(input 'q' or 'quit' to quit)" << endl;
-                        cout << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))" << endl;
-                        cout << "input:";
-                    }
-                    else if (brand == make_pair(INT_MAX, INT_MAX))
-                    {
-                        cout << "invalid brand code! (must belong to 1~5)" << endl;
-                        cout << "input:";
-                    }
-                    else
-                    {
-                        //合法，输出。
-                        queryResponser.selectBrand(brand);
-                        // totalData.outputUnderSale(brand);
-                        cout << "input:";
-                    }
-                }
+                queryResponser.dealInteract(s);
             }
             } });
     interactThread.detach();
@@ -193,10 +168,13 @@ int main(int argc, char *argv[])
         if (calculator.select_idx == calculator.index)
         {
             queryResponser.printSaleInfo();
+            queryResponser.randomSelect();
             //交互部分
             cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
             cout
-                << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
+                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)"<<endl
+                << R"('select c/container {con}' to query container {con},')"<<endl
+                << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
                 << endl;
             cout << "input:";
             // interactThread.join();
@@ -224,11 +202,14 @@ int main(int argc, char *argv[])
         if (calculator.select_idx == calculator.index)
         {
             queryResponser.printSaleInfo();
+            queryResponser.randomSelect();
             //交互部分
             cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
             cout
-                << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
-                << endl;
+                    << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)"<<endl
+                    << R"('select c/container {con}' to query container {con},')"<<endl
+                    << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
+                    << endl;
             cout << "input:";
             // interactThread.join();
             cv.wait(lck);
