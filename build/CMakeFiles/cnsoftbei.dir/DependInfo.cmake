@@ -1,29 +1,28 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/AdvancedCalculator.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/BrandData.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/Calculator.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/Part.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/PartData.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/TotalData.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/Utils.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/ZipOrder.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/ZipPart.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/client.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/dataReader.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/message.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/cpp/server.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o"
-  "/home/wzj/softFinal/CnSoftwareBei/main.cpp" "/home/wzj/softFinal/CnSoftwareBei/build/CMakeFiles/cnsoftbei.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/wzj/cnSoftFinal/cpp/AdvancedCalculator.cpp" "CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/BrandData.cpp" "CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/Calculator.cpp" "CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/Part.cpp" "CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/PartData.cpp" "CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/QueryResponser.cpp" "CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/TotalData.cpp" "CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/Utils.cpp" "CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/ZipOrder.cpp" "CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/ZipPart.cpp" "CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/client.cpp" "CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/dataReader.cpp" "CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/message.cpp" "CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o.d"
+  "/home/wzj/cnSoftFinal/cpp/server.cpp" "CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o.d"
+  "/home/wzj/cnSoftFinal/main.cpp" "CMakeFiles/cnsoftbei.dir/main.cpp.o" "gcc" "CMakeFiles/cnsoftbei.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

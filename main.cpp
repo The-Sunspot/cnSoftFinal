@@ -66,41 +66,110 @@ int main(int argc, char *argv[])
     client *sendMessager = nullptr; // 1号实例顺序不同，暂不能赋值
 
     //查询响应器
-    QueryResponser queryResponser(calculator,totalData);
+    QueryResponser queryResponser(calculator, totalData);
 
     string s;
+
+    std::thread interactThread([&]
+                               {
+        while (getline(cin,s))
+        {
+            // cout<<"get s::"<<s<<endl;
+            if (!reader.load_flag)
+            {
+                if (s != "load")
+                {
+                    cout << "please enter \"load\"!" << endl;
+                    cout << "input: ";
+                }
+                else
+                {
+                    if (sendMessager == nullptr)
+                        sendMessager = new client(serverPort[n], serverPort[index]);
+                    //告知
+                    sendMessager->sendLoad();
+                    // break;
+                }
+            }
+            else if (!calculator.select_flag)
+            {
+                if (s != "select")
+                {
+                    cout << "please enter \"select\"!" << endl;
+                    cout << "input: ";
+                }
+                else
+                {
+                    sendMessager->sendStart(calculator.index);
+                    // break;
+                }
+            }
+            else
+            {
+                //空行处理
+                if (s.empty() || s == "\n" || s == "\r\n")
+                    continue;
+                //退出
+                if (s == "q" || s == "quit")
+                {
+                    cout << "goodbye" << endl;
+                    cv.notify_one();
+                    break;
+                }
+                else
+                {
+                    //根据Utils::judgeInput判断是否合法，并给予提示
+                    auto brand = Utils::judgeInput(s);
+                    if (brand == make_pair(-1, -1))
+                    {
+                        cout << R"(input 'q' or 'quit' to quit)" << endl;
+                        cout << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))" << endl;
+                        cout << "input:";
+                    }
+                    else if (brand == make_pair(INT_MAX, INT_MAX))
+                    {
+                        cout << "invalid brand code! (must belong to 1~5)" << endl;
+                        cout << "input:";
+                    }
+                    else
+                    {
+                        //合法，输出。
+                        queryResponser.selectBrand(brand);
+                        // totalData.outputUnderSale(brand);
+                        cout << "input:";
+                    }
+                }
+            }
+            } });
+    interactThread.detach();
+
     // load
     if (index != 1)
     {
-        cout << "wait for load. input \'load\' in 1st program to load datas." << endl;
+        // cout << "wait for load. input \'load\' in 1st program to load datas." << endl;
         //建立连接
         sendMessager = new client(serverPort[index - 1], serverPort[index]);
-        //等待同步
+        cout << "wait for load. input \'load\' to load datas." << endl
+             << "input: ";
+
         cv.wait(lck);
         //告知
         sendMessager->sendLoad();
     }
     else
     { //主进程
-        cout << "wait for load. input \'load\' to load datas." << endl;
-        cout << "input: ";
-        while (cin >> s)
-        {
-            if (s != "load")
-            {
-                cout << "please enter \"load\"!" << endl;
-                cout << "input: ";
-            }
-            else
-                break;
-        }
-        //建立连接
-        sendMessager = new client(serverPort[n], serverPort[index]);
-        //通知
-        sendMessager->sendLoad();
+        cout << "wait for load. input \'load\' to load datas." << endl
+             << "input: ";
+
         //同步
         cv.wait(lck);
+        //建立连接
+        if (sendMessager == nullptr)
+            sendMessager = new client(serverPort[n], serverPort[index]);
+        //通知
+        sendMessager->sendLoad();
     }
+
     //设置发送实例
     calculator.sendMessager = sendMessager;
     //读入数据
@@ -110,79 +179,64 @@ int main(int argc, char *argv[])
     //普通进程无需读入
     if (index != 1)
     {
-        cout << "wait for calculate. input \'select\' in 1st program to do calculate and output." << endl;
+        // cout << "wait for calculate. input \'select\' in 1st program to do calculate and output." << endl;
+        cout << "wait for calculate. input \'select\' to do calculate and output." << endl
+             << "input: ";
+
         //等待同步
         cv.wait(lck);
         //通知
-        sendMessager->sendStart();
+        sendMessager->sendStart(calculator.select_idx);
         //计算
         calculator.doCalculate(cv, lck);
-        cout << "calculate over. program exit" << endl;
-        SYS_PAUSE;
+
+        if (calculator.select_idx == calculator.index)
+        {
+            queryResponser.printSaleInfo();
+            //交互部分
+            cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
+            cout
+                << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
+                << endl;
+            cout << "input:";
+            // interactThread.join();
+            cv.wait(lck);
+        }
+        else
+        {
+            cout << "calculate over. program exit" << endl;
+            SYS_PAUSE;
+        }
         return 0;
     }
     else
     { //主进程
-        cout << "wait for calculate. input \'select\' to do calculate and output." << endl;
-        cout << "input: ";
-        while (cin >> s)
-        {
-            if (s != "select")
-            {
-                cout << "please enter \"select\"!" << endl;
-                cout << "input: ";
-            }
-            else
-                break;
-        }
-        //传递
-        sendMessager->sendStart();
+        cout << "wait for calculate. input \'select\' to do calculate and output." << endl
+             << "input: ";
+
         //同步
         cv.wait(lck);
+        //传递
+        sendMessager->sendStart(calculator.select_idx);
         //计算
         calculator.doCalculate(cv, lck);
-        queryResponser.printSaleInfo();
-        //交互部分
-        cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
-        cout
-            << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
-            << endl;
-        cout << "input:";
 
-        while (getline(cin, s))
+        if (calculator.select_idx == calculator.index)
         {
-            //空行处理
-            if (s.empty() || s == "\n" || s == "\r\n")
-                continue;
-            //退出
-            if (s == "q" || s == "quit")
-            {
-                cout << "goodbye" << endl;
-                return 0;
-            }
-            else
-            {
-                //根据Utils::judgeInput判断是否合法，并给予提示
-                auto brand = Utils::judgeInput(s);
-                if (brand == make_pair(-1, -1))
-                {
-                    cout << R"(input 'q' or 'quit' to quit)" << endl;
-                    cout << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))" << endl;
-                    cout << "input:";
-                }
-                else if (brand == make_pair(INT_MAX, INT_MAX))
-                {
-                    cout << "invalid brand code! (must belong to 1~5)" << endl;
-                    cout << "input:";
-                }
-                else
-                {
-                    //合法，输出。
-                    queryResponser.selectBrand(brand);
-                    //totalData.outputUnderSale(brand);
-                    cout << "input:";
-                }
-            }
+            queryResponser.printSaleInfo();
+            //交互部分
+            cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
+            cout
+                << R"(input 'select Brand#{a}{b}' or 'select {a}{b}' or '{a}{b}' to show the Brand#{a}{b} details.(a and b must belong to 1~5))"
+                << endl;
+            cout << "input:";
+            // interactThread.join();
+            cv.wait(lck);
+        }
+        else
+        {
+            cout << "calculate over. program exit" << endl;
+            SYS_PAUSE;
         }
     }
 }

@@ -31,9 +31,9 @@ void client::sendLoad()
 {
     this->send(message(message::headEnum::load));
 }
-void client::sendStart()
+void client::sendStart(int idx)
 {
-    this->send(message(message::headEnum::start));
+    this->send(message(message::headEnum::start, to_string(idx).c_str()));
 }
 void client::sendPart(ZipPart &zippart)
 {

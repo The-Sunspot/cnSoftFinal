@@ -1,72 +1,77 @@
 [
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/main.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/main.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/main.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/main.cpp.o -c /home/wzj/cnSoftFinal/main.cpp",
+  "file": "/home/wzj/cnSoftFinal/main.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/AdvancedCalculator.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/AdvancedCalculator.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o -c /home/wzj/cnSoftFinal/cpp/AdvancedCalculator.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/AdvancedCalculator.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/BrandData.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/BrandData.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o -c /home/wzj/cnSoftFinal/cpp/BrandData.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/BrandData.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/Calculator.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/Calculator.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o -c /home/wzj/cnSoftFinal/cpp/Calculator.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/Calculator.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/Part.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/Part.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o -c /home/wzj/cnSoftFinal/cpp/Part.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/Part.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/PartData.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/PartData.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o -c /home/wzj/cnSoftFinal/cpp/PartData.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/PartData.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/TotalData.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/TotalData.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o -c /home/wzj/cnSoftFinal/cpp/QueryResponser.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/QueryResponser.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/Utils.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/Utils.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o -c /home/wzj/cnSoftFinal/cpp/TotalData.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/TotalData.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/ZipOrder.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/ZipOrder.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o -c /home/wzj/cnSoftFinal/cpp/Utils.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/Utils.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/ZipPart.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/ZipPart.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o -c /home/wzj/cnSoftFinal/cpp/ZipOrder.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/ZipOrder.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/client.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/client.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o -c /home/wzj/cnSoftFinal/cpp/ZipPart.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/ZipPart.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/dataReader.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/dataReader.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o -c /home/wzj/cnSoftFinal/cpp/client.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/client.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/message.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/message.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o -c /home/wzj/cnSoftFinal/cpp/dataReader.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/dataReader.cpp"
 },
 {
-  "directory": "/home/wzj/softFinal/CnSoftwareBei/build",
-  "command": "/usr/bin/g++  -I/home/wzj/softFinal/CnSoftwareBei/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o -c /home/wzj/softFinal/CnSoftwareBei/cpp/server.cpp",
-  "file": "/home/wzj/softFinal/CnSoftwareBei/cpp/server.cpp"
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o -c /home/wzj/cnSoftFinal/cpp/message.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/message.cpp"
+},
+{
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o -c /home/wzj/cnSoftFinal/cpp/server.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/server.cpp"
 }
 ]
