@@ -21,10 +21,13 @@ class Calculator
 {
 private:
     mutex mtx;
+
 public:
     // 用于finish的同步的flag
     int index, totalProgramCount;
     bool is_finished, is_notify;
+    bool select_flag = false;
+    int select_idx;
     //统计信息对象
     TotalData &totalData;
     //数据读入对象

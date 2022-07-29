@@ -75,8 +75,8 @@ void AdvancedCalculator::solveOrder(ZipOrder &order)
 
     //找到这个零件品牌对应的统计数据
     auto &targetBrandData = totalData.datas[brand.first - 1][brand.second - 1];
-    string container=reader.parts[idHash].pContainer;
-    targetBrandData->updateData(order,container);
+    string container = reader.parts[idHash].pContainer;
+    targetBrandData->updateData(order, container);
     totalData.addLocalTotalSales(order.lQuantity);
 }
 
@@ -116,7 +116,7 @@ void AdvancedCalculator::partTabelCommunicate(condition_variable &cv, unique_loc
         {
             //降低send速度，减轻io压力
             //可以根据具体环境配置进行调整
-            this_thread::sleep_for(std::chrono::milliseconds(400));
+            this_thread::sleep_for(std::chrono::milliseconds(300));
 
             //进度条
             if (i % 50000 == 0)
@@ -124,7 +124,7 @@ void AdvancedCalculator::partTabelCommunicate(condition_variable &cv, unique_loc
         }
     }
     //降低send速度，减轻io压力
-    this_thread::sleep_for(std::chrono::milliseconds(500));
+    this_thread::sleep_for(std::chrono::milliseconds(200));
     //等待通信完成
     doAsync(cv, lck);
 
@@ -155,7 +155,7 @@ void AdvancedCalculator::partDataCommunicate(condition_variable &cv, unique_lock
 
     // 4->3->2->1这样通信
     int sendCount = 0;
-    for (int now = this->totalProgramCount; now != 1; now--)
+    for (int now = select_idx - 1; now != select_idx; now = now - 1 == 0 ? totalProgramCount : now - 1)
     {
         //应该自己发送，就遍历发送
         if (this->index == now)

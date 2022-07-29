@@ -1,4 +1,4 @@
-# Install script for directory: /home/wzj/softFinal/CnSoftwareBei
+# Install script for directory: /home/wzj/cnSoftFinal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wzj/softFinal/CnSoftwareBei/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wzj/cnSoftFinal/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

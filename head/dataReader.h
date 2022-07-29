@@ -16,16 +16,15 @@ class dataReader
 private:
     //零件表可能位置
     std::vector<std::string> partFileNames{
-            R"(../data/part.tbl)",
-            R"(data/part.tbl)",
-            R"(part.tbl)"
-    };
+        R"(../data/part.tbl)",
+        R"(data/part.tbl)",
+        R"(part.tbl)"};
     //订单表可能位置
     std::vector<std::string> orderFileName{
-            R"(../data/lineitem.tbl)",
-            R"(data/lineitem.tbl)",
-            R"(lineitem.tbl)"
-    };
+        R"(../data/lineitem.tbl)",
+        R"(data/lineitem.tbl)",
+        R"(lineitem.tbl)"};
+
 public:
     //零件数组
     std::vector<ZipPart> parts;
@@ -35,12 +34,13 @@ public:
     std::vector<ZipOrder> orders;
     //当前程序编号和程序实例总数
     int index, totalProgramCount;
+    bool load_flag = false;
 
     //插入零件，用于server调用
-    //return false: 已经存在
+    // return false: 已经存在
     //       true:  插入成功
     bool insertPart(ZipPart &part);
-    dataReader(int index, int n, bool isTesting = false) ;
+    dataReader(int index, int n, bool isTesting = false);
     int loadParts();  //获取Part表数据
     int loadOrders(); //获取lineitem表数据
 };

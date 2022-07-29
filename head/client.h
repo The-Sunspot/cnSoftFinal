@@ -43,12 +43,12 @@ public:
 
     void sendConnect();
     void sendLoad();
-    void sendStart();
+    void sendStart(int idx);
     void sendPart(ZipPart &zippart);
     //调用ios.run
-    void runIos(){ios.run();}
+    void runIos() { ios.run(); }
     //调用ios.reset
-    void resetIos(){ios.reset();}
+    void resetIos() { ios.reset(); }
 };
 
 #endif // CNSOFTBEI_CLIENT_H
