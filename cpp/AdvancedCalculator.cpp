@@ -116,7 +116,7 @@ void AdvancedCalculator::partTabelCommunicate(condition_variable &cv, unique_loc
         {
             //降低send速度，减轻io压力
             //可以根据具体环境配置进行调整
-            this_thread::sleep_for(std::chrono::milliseconds(1000));
+            this_thread::sleep_for(std::chrono::milliseconds(250));
 
             //进度条
             if (i % 50000 == 0)
@@ -157,6 +157,8 @@ void AdvancedCalculator::partDataCommunicate(condition_variable &cv, unique_lock
     int sendCount = 0;
     for (int now = select_idx - 1; now != select_idx; now = now - 1 == 0 ? totalProgramCount : now - 1)
     {
+        if (now == 0)
+            now = totalProgramCount;
         //应该自己发送，就遍历发送
         if (this->index == now)
         {

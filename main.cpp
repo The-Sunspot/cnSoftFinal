@@ -78,8 +78,7 @@ int main(int argc, char *argv[])
             {
                 if (s != "load")
                 {
-                    cout << "please enter \"load\"!" << endl;
-                    cout << "input: ";
+                    cout << "please enter \"load\"!\ninput: ";
                 }
                 else
                 {
@@ -94,8 +93,7 @@ int main(int argc, char *argv[])
             {
                 if (s != "select")
                 {
-                    cout << "please enter \"select\"!" << endl;
-                    cout << "input: ";
+                    cout << "please enter \"select\"!\ninput: ";
                 }
                 else
                 {
@@ -124,8 +122,7 @@ int main(int argc, char *argv[])
         // cout << "wait for load. input \'load\' in 1st program to load datas." << endl;
         //建立连接
         sendMessager = new client(serverPort[index - 1], serverPort[index]);
-        cout << "wait for load. input \'load\' to load datas." << endl
-             << "input: ";
+        cout << "wait for load. input \'load\' to load datas.\ninput: ";
 
         cv.wait(lck);
         //告知
@@ -133,8 +130,7 @@ int main(int argc, char *argv[])
     }
     else
     { //主进程
-        cout << "wait for load. input \'load\' to load datas." << endl
-             << "input: ";
+        cout << "wait for load. input \'load\' to load datas.\ninput: ";
 
         //同步
         cv.wait(lck);
@@ -155,8 +151,7 @@ int main(int argc, char *argv[])
     if (index != 1)
     {
         // cout << "wait for calculate. input \'select\' in 1st program to do calculate and output." << endl;
-        cout << "wait for calculate. input \'select\' to do calculate and output." << endl
-             << "input: ";
+        cout << "wait for calculate. input \'select\' to do calculate and output.\ninput: ";
 
         //等待同步
         cv.wait(lck);
@@ -172,8 +167,8 @@ int main(int argc, char *argv[])
             //交互部分
             cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
             cout
-                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)"<<endl
-                << R"('select c/container {con}' to query container {con},')"<<endl
+                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
+                << R"('select c/container {con}' to query container {con},')" << endl
                 << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
                 << endl;
             cout << "input:";
@@ -189,8 +184,7 @@ int main(int argc, char *argv[])
     }
     else
     { //主进程
-        cout << "wait for calculate. input \'select\' to do calculate and output." << endl
-             << "input: ";
+        cout << "wait for calculate. input \'select\' to do calculate and output.\ninput: ";
 
         //同步
         cv.wait(lck);
@@ -206,10 +200,10 @@ int main(int argc, char *argv[])
             //交互部分
             cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
             cout
-                    << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)"<<endl
-                    << R"('select c/container {con}' to query container {con},')"<<endl
-                    << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
-                    << endl;
+                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
+                << R"('select c/container {con}' to query container {con},')" << endl
+                << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
+                << endl;
             cout << "input:";
             // interactThread.join();
             cv.wait(lck);
