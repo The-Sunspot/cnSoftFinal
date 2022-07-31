@@ -418,12 +418,6 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
         }
         return true;
     };
-    auto getTrueQuery=[](const std::string &s)->std::string {
-        if(s.size()<2)  return s;
-        if(s[0]==s[s.size()-2]&&s[0]=='\''){}
-            return s.substr(1,s.size()-1);
-        return s;
-    };
 
     using recType=std::tuple<std::string, std::pair<int, int>, std::string>;
     const recType QUIT={"quit",{0,0},""};
@@ -436,7 +430,7 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
     recType both={"both",{0,0},""};
     if(s.empty()) return WRONGINPUT;
 
-    auto inputs=Utils::split(s,' ');
+    std::vector<std::string> inputs=Utils::split(s,' ');
 
     if(inputs.size()==1){
         if(inputs[0]=="q"||inputs[0]=="quit"){
@@ -465,7 +459,7 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
             return brand;
         }
         else if(isEqualIgnoreLowerOrUpper(inputs[1],"c")||isEqualIgnoreLowerOrUpper(inputs[1],"container")){
-            std::get<2>(container)=getTrueQuery(inputs[2]);
+            std::get<2>(container)=inputs[2];
             return container;
         }
         else{
@@ -484,7 +478,7 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
                 return WRONGINPUT;
             }
             std::get<1>(both)=checkFunction(inputs[2][0],inputs[2][1]);
-            std::get<2>(both)=getTrueQuery(inputs[4]);
+            std::get<2>(both)=(inputs[4]);
             return both;
         }
         else if(
@@ -495,7 +489,7 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
                 return WRONGINPUT;
             }
             std::get<1>(both)=checkFunction(inputs[4][0],inputs[4][1]);
-            std::get<2>(both)=getTrueQuery(inputs[2]);
+            std::get<2>(both)=(inputs[2]);
             return both;
         }
         else{

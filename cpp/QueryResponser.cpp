@@ -41,16 +41,21 @@ void QueryResponser::randomSelect() {
     pair<int,int> brand={brandGen(randomEngine),brandGen(randomEngine)};
     string container=this->containers[containerGen(randomEngine)];
     cout<<"random para: "<<"Brand#"<<brand.first<<brand.second<<"   container: "<<container<<endl;
+    cout<<"Brand:\n";
     this->selectBrand(brand);
     cout<<"----------------------\n";
+    cout<<"Container:\n";
     this->selectContainer(container);
     cout<<"----------------------\n";
+    cout<<"Brand & Container:\n";
     this->selectBrandAndContainer(brand,container);
     cout<<"----------------------\n";
 }
 
 void QueryResponser::dealInteract(const string &s) {
     auto input=Utils::judgeInputExtended(s);
+//    cout<<get<0>(input)<<' '<<get<1>(input).first<<get<1>(input).second<<' '<<get<2>(input)<<endl;
+//    return ;
     if(get<0>(input)=="wrong"){
         cout
                 << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)"<<endl
