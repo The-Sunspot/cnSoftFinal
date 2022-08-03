@@ -16,7 +16,7 @@ public:
 
 
 
-    //订单
+    //订单，这样的话不用再去遍历1500w大订单了
     vector<ZipOrder> orders;
 
     void doCalculate(condition_variable &cv, std::unique_lock<std::mutex> &lck);
