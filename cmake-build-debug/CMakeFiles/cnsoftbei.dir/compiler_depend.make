@@ -979,7 +979,9 @@ CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.obj: ../cpp/AdvancedCalculat
   ../include/asio/impl/write_at.hpp \
   ../head/message.h \
   ../head/Utils.h \
-  ../head/Part.h
+  ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h
 
 CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.obj: ../cpp/BrandData.cpp \
   ../head/BrandData.h \
@@ -2124,6 +2126,8 @@ CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.obj: ../cpp/Calculator.cpp \
   ../head/message.h \
   ../head/Utils.h \
   ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iomanip \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.h \
@@ -2137,6 +2141,1151 @@ CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.obj: ../cpp/Calculator.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.obj: ../cpp/FinalCompetitionCalculator.cpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iomanip \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/process.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_conv.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
+  ../head/FinalCompetitionCalculator.h \
+  ../head/Calculator.h \
+  ../head/TotalData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+  ../head/BrandData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_set \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_set.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/shared_mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/condition_variable \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/concurrence.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  ../head/PartData.h \
+  ../head/ZipOrder.h \
+  ../head/ZipPart.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/set \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_set.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multiset.h \
+  ../head/dataReader.h \
+  ../head/ZipPart.h \
+  ../head/client.h \
+  ../include/asio.hpp \
+  ../include/asio/associated_allocator.hpp \
+  ../include/asio/detail/config.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
+  ../include/asio/associator.hpp \
+  ../include/asio/detail/push_options.hpp \
+  ../include/asio/detail/pop_options.hpp \
+  ../include/asio/detail/functional.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/algorithmfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  ../include/asio/detail/type_traits.hpp \
+  ../include/asio/associated_executor.hpp \
+  ../include/asio/execution/executor.hpp \
+  ../include/asio/execution/execute.hpp \
+  ../include/asio/execution/detail/as_invocable.hpp \
+  ../include/asio/detail/atomic_count.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/atomic \
+  ../include/asio/detail/memory.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
+  ../include/asio/detail/throw_exception.hpp \
+  ../include/asio/execution/receiver_invocation_error.hpp \
+  ../include/asio/execution/impl/receiver_invocation_error.ipp \
+  ../include/asio/execution/set_done.hpp \
+  ../include/asio/traits/set_done_member.hpp \
+  ../include/asio/traits/set_done_free.hpp \
+  ../include/asio/execution/set_error.hpp \
+  ../include/asio/traits/set_error_member.hpp \
+  ../include/asio/traits/set_error_free.hpp \
+  ../include/asio/execution/set_value.hpp \
+  ../include/asio/detail/variadic_templates.hpp \
+  ../include/asio/traits/set_value_member.hpp \
+  ../include/asio/traits/set_value_free.hpp \
+  ../include/asio/execution/detail/as_receiver.hpp \
+  ../include/asio/traits/execute_member.hpp \
+  ../include/asio/traits/execute_free.hpp \
+  ../include/asio/execution/invocable_archetype.hpp \
+  ../include/asio/traits/equality_comparable.hpp \
+  ../include/asio/is_executor.hpp \
+  ../include/asio/detail/is_executor.hpp \
+  ../include/asio/system_executor.hpp \
+  ../include/asio/execution.hpp \
+  ../include/asio/execution/allocator.hpp \
+  ../include/asio/execution/scheduler.hpp \
+  ../include/asio/execution/schedule.hpp \
+  ../include/asio/traits/schedule_member.hpp \
+  ../include/asio/traits/schedule_free.hpp \
+  ../include/asio/execution/sender.hpp \
+  ../include/asio/execution/detail/void_receiver.hpp \
+  ../include/asio/execution/receiver.hpp \
+  ../include/asio/execution/connect.hpp \
+  ../include/asio/execution/detail/as_operation.hpp \
+  ../include/asio/traits/start_member.hpp \
+  ../include/asio/execution/operation_state.hpp \
+  ../include/asio/execution/start.hpp \
+  ../include/asio/traits/start_free.hpp \
+  ../include/asio/traits/connect_member.hpp \
+  ../include/asio/traits/connect_free.hpp \
+  ../include/asio/is_applicable_property.hpp \
+  ../include/asio/traits/query_static_constexpr_member.hpp \
+  ../include/asio/traits/static_query.hpp \
+  ../include/asio/execution/any_executor.hpp \
+  ../include/asio/detail/assert.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/assert.h \
+  ../include/asio/detail/cstddef.hpp \
+  ../include/asio/detail/executor_function.hpp \
+  ../include/asio/detail/handler_alloc_helpers.hpp \
+  ../include/asio/detail/noncopyable.hpp \
+  ../include/asio/detail/recycling_allocator.hpp \
+  ../include/asio/detail/thread_context.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
+  ../include/asio/detail/call_stack.hpp \
+  ../include/asio/detail/tss_ptr.hpp \
+  ../include/asio/detail/win_tss_ptr.hpp \
+  ../include/asio/detail/socket_types.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/windows.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/windef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winver.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/reason.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/imm.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/qos.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/mswsock.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/psdk_inc/_xmitfile.h \
+  ../include/asio/detail/old_win_sdk_compat.hpp \
+  ../include/asio/detail/impl/win_tss_ptr.ipp \
+  ../include/asio/detail/throw_error.hpp \
+  ../include/asio/error_code.hpp \
+  ../include/asio/impl/error_code.ipp \
+  ../include/asio/detail/local_free_on_block_exit.hpp \
+  ../include/asio/detail/impl/throw_error.ipp \
+  ../include/asio/system_error.hpp \
+  ../include/asio/error.hpp \
+  ../include/asio/impl/error.ipp \
+  ../include/asio/detail/impl/thread_context.ipp \
+  ../include/asio/detail/thread_info_base.hpp \
+  ../include/asio/multiple_exceptions.hpp \
+  ../include/asio/impl/multiple_exceptions.ipp \
+  ../include/asio/associated_allocator.hpp \
+  ../include/asio/handler_alloc_hook.hpp \
+  ../include/asio/impl/handler_alloc_hook.ipp \
+  ../include/asio/detail/handler_invoke_helpers.hpp \
+  ../include/asio/handler_invoke_hook.hpp \
+  ../include/asio/detail/non_const_lvalue.hpp \
+  ../include/asio/detail/scoped_ptr.hpp \
+  ../include/asio/execution/bad_executor.hpp \
+  ../include/asio/execution/impl/bad_executor.ipp \
+  ../include/asio/execution/blocking.hpp \
+  ../include/asio/prefer.hpp \
+  ../include/asio/traits/prefer_free.hpp \
+  ../include/asio/traits/prefer_member.hpp \
+  ../include/asio/traits/require_free.hpp \
+  ../include/asio/traits/require_member.hpp \
+  ../include/asio/traits/static_require.hpp \
+  ../include/asio/query.hpp \
+  ../include/asio/traits/query_member.hpp \
+  ../include/asio/traits/query_free.hpp \
+  ../include/asio/require.hpp \
+  ../include/asio/execution/blocking_adaptation.hpp \
+  ../include/asio/detail/event.hpp \
+  ../include/asio/detail/win_event.hpp \
+  ../include/asio/detail/impl/win_event.ipp \
+  ../include/asio/detail/mutex.hpp \
+  ../include/asio/detail/win_mutex.hpp \
+  ../include/asio/detail/scoped_lock.hpp \
+  ../include/asio/detail/impl/win_mutex.ipp \
+  ../include/asio/execution/bulk_execute.hpp \
+  ../include/asio/execution/bulk_guarantee.hpp \
+  ../include/asio/execution/detail/bulk_sender.hpp \
+  ../include/asio/traits/bulk_execute_member.hpp \
+  ../include/asio/traits/bulk_execute_free.hpp \
+  ../include/asio/execution/context.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/any \
+  ../include/asio/execution/context_as.hpp \
+  ../include/asio/execution/mapping.hpp \
+  ../include/asio/execution/occupancy.hpp \
+  ../include/asio/execution/outstanding_work.hpp \
+  ../include/asio/execution/prefer_only.hpp \
+  ../include/asio/execution/relationship.hpp \
+  ../include/asio/execution/submit.hpp \
+  ../include/asio/execution/detail/submit_receiver.hpp \
+  ../include/asio/traits/submit_member.hpp \
+  ../include/asio/traits/submit_free.hpp \
+  ../include/asio/impl/system_executor.hpp \
+  ../include/asio/detail/executor_op.hpp \
+  ../include/asio/detail/fenced_block.hpp \
+  ../include/asio/detail/std_fenced_block.hpp \
+  ../include/asio/detail/scheduler_operation.hpp \
+  ../include/asio/detail/handler_tracking.hpp \
+  ../include/asio/detail/impl/handler_tracking.ipp \
+  ../include/asio/detail/op_queue.hpp \
+  ../include/asio/detail/global.hpp \
+  ../include/asio/detail/win_global.hpp \
+  ../include/asio/detail/static_mutex.hpp \
+  ../include/asio/detail/win_static_mutex.hpp \
+  ../include/asio/detail/impl/win_static_mutex.ipp \
+  ../include/asio/system_context.hpp \
+  ../include/asio/detail/scheduler.hpp \
+  ../include/asio/execution_context.hpp \
+  ../include/asio/impl/execution_context.hpp \
+  ../include/asio/detail/handler_type_requirements.hpp \
+  ../include/asio/async_result.hpp \
+  ../include/asio/detail/service_registry.hpp \
+  ../include/asio/detail/impl/service_registry.hpp \
+  ../include/asio/detail/impl/service_registry.ipp \
+  ../include/asio/impl/execution_context.ipp \
+  ../include/asio/detail/conditionally_enabled_event.hpp \
+  ../include/asio/detail/conditionally_enabled_mutex.hpp \
+  ../include/asio/detail/null_event.hpp \
+  ../include/asio/detail/impl/null_event.ipp \
+  ../include/asio/detail/scheduler_task.hpp \
+  ../include/asio/detail/thread.hpp \
+  ../include/asio/detail/posix_thread.hpp \
+  ../include/asio/detail/impl/posix_thread.ipp \
+  ../include/asio/detail/impl/scheduler.ipp \
+  ../include/asio/detail/concurrency_hint.hpp \
+  ../include/asio/detail/limits.hpp \
+  ../include/asio/detail/scheduler_thread_info.hpp \
+  ../include/asio/detail/signal_blocker.hpp \
+  ../include/asio/detail/null_signal_blocker.hpp \
+  ../include/asio/detail/reactor.hpp \
+  ../include/asio/detail/null_reactor.hpp \
+  ../include/asio/detail/thread_group.hpp \
+  ../include/asio/impl/system_context.hpp \
+  ../include/asio/impl/system_context.ipp \
+  ../include/asio/associated_cancellation_slot.hpp \
+  ../include/asio/cancellation_signal.hpp \
+  ../include/asio/cancellation_type.hpp \
+  ../include/asio/impl/cancellation_signal.ipp \
+  ../include/asio/associator.hpp \
+  ../include/asio/async_result.hpp \
+  ../include/asio/awaitable.hpp \
+  ../include/asio/basic_datagram_socket.hpp \
+  ../include/asio/basic_socket.hpp \
+  ../include/asio/any_io_executor.hpp \
+  ../include/asio/impl/any_io_executor.ipp \
+  ../include/asio/detail/io_object_impl.hpp \
+  ../include/asio/io_context.hpp \
+  ../include/asio/detail/cstdint.hpp \
+  ../include/asio/detail/wrapped_handler.hpp \
+  ../include/asio/detail/bind_handler.hpp \
+  ../include/asio/detail/handler_cont_helpers.hpp \
+  ../include/asio/handler_continuation_hook.hpp \
+  ../include/asio/detail/chrono.hpp \
+  ../include/asio/detail/winsock_init.hpp \
+  ../include/asio/detail/impl/winsock_init.ipp \
+  ../include/asio/detail/win_iocp_io_context.hpp \
+  ../include/asio/detail/timer_queue_base.hpp \
+  ../include/asio/detail/operation.hpp \
+  ../include/asio/detail/win_iocp_operation.hpp \
+  ../include/asio/detail/timer_queue_set.hpp \
+  ../include/asio/detail/impl/timer_queue_set.ipp \
+  ../include/asio/detail/wait_op.hpp \
+  ../include/asio/detail/win_iocp_thread_info.hpp \
+  ../include/asio/detail/impl/win_iocp_io_context.hpp \
+  ../include/asio/detail/completion_handler.hpp \
+  ../include/asio/detail/handler_work.hpp \
+  ../include/asio/associated_executor.hpp \
+  ../include/asio/executor_work_guard.hpp \
+  ../include/asio/detail/impl/win_iocp_io_context.ipp \
+  ../include/asio/impl/io_context.hpp \
+  ../include/asio/impl/io_context.ipp \
+  ../include/asio/post.hpp \
+  ../include/asio/impl/post.hpp \
+  ../include/asio/detail/work_dispatcher.hpp \
+  ../include/asio/socket_base.hpp \
+  ../include/asio/detail/io_control.hpp \
+  ../include/asio/detail/socket_option.hpp \
+  ../include/asio/detail/win_iocp_socket_service.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
+  ../include/asio/detail/buffer_sequence_adapter.hpp \
+  ../include/asio/buffer.hpp \
+  ../include/asio/detail/array_fwd.hpp \
+  ../include/asio/detail/string_view.hpp \
+  ../include/asio/detail/is_buffer_sequence.hpp \
+  ../include/asio/registered_buffer.hpp \
+  ../include/asio/detail/impl/buffer_sequence_adapter.ipp \
+  ../include/asio/detail/reactor_op.hpp \
+  ../include/asio/detail/select_reactor.hpp \
+  ../include/asio/detail/fd_set_adapter.hpp \
+  ../include/asio/detail/posix_fd_set_adapter.hpp \
+  ../include/asio/detail/win_fd_set_adapter.hpp \
+  ../include/asio/detail/reactor_op_queue.hpp \
+  ../include/asio/detail/hash_map.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/list \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc \
+  ../include/asio/detail/select_interrupter.hpp \
+  ../include/asio/detail/socket_select_interrupter.hpp \
+  ../include/asio/detail/impl/socket_select_interrupter.ipp \
+  ../include/asio/detail/socket_holder.hpp \
+  ../include/asio/detail/socket_ops.hpp \
+  ../include/asio/detail/impl/socket_ops.ipp \
+  ../include/asio/detail/impl/select_reactor.hpp \
+  ../include/asio/detail/impl/select_reactor.ipp \
+  ../include/asio/detail/win_iocp_null_buffers_op.hpp \
+  ../include/asio/detail/win_iocp_socket_accept_op.hpp \
+  ../include/asio/detail/win_iocp_socket_service_base.hpp \
+  ../include/asio/associated_cancellation_slot.hpp \
+  ../include/asio/detail/win_iocp_socket_connect_op.hpp \
+  ../include/asio/detail/win_iocp_socket_send_op.hpp \
+  ../include/asio/detail/win_iocp_socket_recv_op.hpp \
+  ../include/asio/detail/win_iocp_socket_recvmsg_op.hpp \
+  ../include/asio/detail/win_iocp_wait_op.hpp \
+  ../include/asio/detail/impl/win_iocp_socket_service_base.ipp \
+  ../include/asio/detail/win_iocp_socket_recvfrom_op.hpp \
+  ../include/asio/basic_deadline_timer.hpp \
+  ../include/asio/basic_file.hpp \
+  ../include/asio/file_base.hpp \
+  ../include/asio/detail/win_iocp_file_service.hpp \
+  ../include/asio/detail/win_iocp_handle_service.hpp \
+  ../include/asio/detail/win_iocp_handle_read_op.hpp \
+  ../include/asio/detail/win_iocp_handle_write_op.hpp \
+  ../include/asio/detail/impl/win_iocp_handle_service.ipp \
+  ../include/asio/detail/impl/win_iocp_file_service.ipp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../include/asio/basic_io_object.hpp \
+  ../include/asio/basic_random_access_file.hpp \
+  ../include/asio/basic_file.hpp \
+  ../include/asio/basic_raw_socket.hpp \
+  ../include/asio/basic_readable_pipe.hpp \
+  ../include/asio/basic_seq_packet_socket.hpp \
+  ../include/asio/basic_serial_port.hpp \
+  ../include/asio/serial_port_base.hpp \
+  ../include/asio/impl/serial_port_base.hpp \
+  ../include/asio/impl/serial_port_base.ipp \
+  ../include/asio/detail/win_iocp_serial_port_service.hpp \
+  ../include/asio/detail/impl/win_iocp_serial_port_service.ipp \
+  ../include/asio/basic_signal_set.hpp \
+  ../include/asio/detail/signal_set_service.hpp \
+  ../include/asio/detail/signal_handler.hpp \
+  ../include/asio/detail/signal_op.hpp \
+  ../include/asio/detail/impl/signal_set_service.ipp \
+  ../include/asio/basic_socket.hpp \
+  ../include/asio/basic_socket_acceptor.hpp \
+  ../include/asio/basic_socket_iostream.hpp \
+  ../include/asio/basic_socket_streambuf.hpp \
+  ../include/asio/basic_stream_socket.hpp \
+  ../include/asio/steady_timer.hpp \
+  ../include/asio/basic_waitable_timer.hpp \
+  ../include/asio/detail/chrono_time_traits.hpp \
+  ../include/asio/detail/deadline_timer_service.hpp \
+  ../include/asio/detail/timer_queue.hpp \
+  ../include/asio/detail/date_time_fwd.hpp \
+  ../include/asio/detail/timer_queue_ptime.hpp \
+  ../include/asio/detail/timer_scheduler.hpp \
+  ../include/asio/detail/timer_scheduler_fwd.hpp \
+  ../include/asio/detail/wait_handler.hpp \
+  ../include/asio/wait_traits.hpp \
+  ../include/asio/basic_socket_streambuf.hpp \
+  ../include/asio/basic_stream_file.hpp \
+  ../include/asio/basic_stream_socket.hpp \
+  ../include/asio/basic_streambuf.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm \
+  ../include/asio/basic_streambuf_fwd.hpp \
+  ../include/asio/basic_waitable_timer.hpp \
+  ../include/asio/basic_writable_pipe.hpp \
+  ../include/asio/bind_allocator.hpp \
+  ../include/asio/bind_cancellation_slot.hpp \
+  ../include/asio/bind_executor.hpp \
+  ../include/asio/uses_executor.hpp \
+  ../include/asio/buffer.hpp \
+  ../include/asio/buffer_registration.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iterator \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stream_iterator.h \
+  ../include/asio/buffered_read_stream_fwd.hpp \
+  ../include/asio/buffered_read_stream.hpp \
+  ../include/asio/buffered_read_stream_fwd.hpp \
+  ../include/asio/detail/buffer_resize_guard.hpp \
+  ../include/asio/detail/buffered_stream_storage.hpp \
+  ../include/asio/impl/buffered_read_stream.hpp \
+  ../include/asio/buffered_stream_fwd.hpp \
+  ../include/asio/buffered_stream.hpp \
+  ../include/asio/buffered_read_stream.hpp \
+  ../include/asio/buffered_write_stream.hpp \
+  ../include/asio/buffered_write_stream_fwd.hpp \
+  ../include/asio/completion_condition.hpp \
+  ../include/asio/write.hpp \
+  ../include/asio/impl/write.hpp \
+  ../include/asio/detail/base_from_cancellation_state.hpp \
+  ../include/asio/cancellation_state.hpp \
+  ../include/asio/detail/base_from_completion_cond.hpp \
+  ../include/asio/detail/consuming_buffers.hpp \
+  ../include/asio/detail/dependent_type.hpp \
+  ../include/asio/impl/buffered_write_stream.hpp \
+  ../include/asio/buffered_stream_fwd.hpp \
+  ../include/asio/buffered_write_stream_fwd.hpp \
+  ../include/asio/buffered_write_stream.hpp \
+  ../include/asio/buffers_iterator.hpp \
+  ../include/asio/cancellation_signal.hpp \
+  ../include/asio/cancellation_state.hpp \
+  ../include/asio/cancellation_type.hpp \
+  ../include/asio/co_spawn.hpp \
+  ../include/asio/completion_condition.hpp \
+  ../include/asio/compose.hpp \
+  ../include/asio/impl/compose.hpp \
+  ../include/asio/connect.hpp \
+  ../include/asio/impl/connect.hpp \
+  ../include/asio/connect_pipe.hpp \
+  ../include/asio/basic_readable_pipe.hpp \
+  ../include/asio/basic_writable_pipe.hpp \
+  ../include/asio/impl/connect_pipe.hpp \
+  ../include/asio/connect_pipe.hpp \
+  ../include/asio/impl/connect_pipe.ipp \
+  ../include/asio/coroutine.hpp \
+  ../include/asio/deadline_timer.hpp \
+  ../include/asio/defer.hpp \
+  ../include/asio/impl/defer.hpp \
+  ../include/asio/detached.hpp \
+  ../include/asio/impl/detached.hpp \
+  ../include/asio/dispatch.hpp \
+  ../include/asio/impl/dispatch.hpp \
+  ../include/asio/error.hpp \
+  ../include/asio/error_code.hpp \
+  ../include/asio/execution.hpp \
+  ../include/asio/execution/allocator.hpp \
+  ../include/asio/execution/any_executor.hpp \
+  ../include/asio/execution/blocking.hpp \
+  ../include/asio/execution/blocking_adaptation.hpp \
+  ../include/asio/execution/bulk_execute.hpp \
+  ../include/asio/execution/bulk_guarantee.hpp \
+  ../include/asio/execution/connect.hpp \
+  ../include/asio/execution/context.hpp \
+  ../include/asio/execution/context_as.hpp \
+  ../include/asio/execution/execute.hpp \
+  ../include/asio/execution/executor.hpp \
+  ../include/asio/execution/invocable_archetype.hpp \
+  ../include/asio/execution/mapping.hpp \
+  ../include/asio/execution/occupancy.hpp \
+  ../include/asio/execution/operation_state.hpp \
+  ../include/asio/execution/outstanding_work.hpp \
+  ../include/asio/execution/prefer_only.hpp \
+  ../include/asio/execution/receiver.hpp \
+  ../include/asio/execution/receiver_invocation_error.hpp \
+  ../include/asio/execution/relationship.hpp \
+  ../include/asio/execution/schedule.hpp \
+  ../include/asio/execution/scheduler.hpp \
+  ../include/asio/execution/sender.hpp \
+  ../include/asio/execution/set_done.hpp \
+  ../include/asio/execution/set_error.hpp \
+  ../include/asio/execution/set_value.hpp \
+  ../include/asio/execution/start.hpp \
+  ../include/asio/execution_context.hpp \
+  ../include/asio/executor.hpp \
+  ../include/asio/impl/executor.hpp \
+  ../include/asio/executor.hpp \
+  ../include/asio/impl/executor.ipp \
+  ../include/asio/executor_work_guard.hpp \
+  ../include/asio/file_base.hpp \
+  ../include/asio/generic/basic_endpoint.hpp \
+  ../include/asio/generic/detail/endpoint.hpp \
+  ../include/asio/generic/detail/impl/endpoint.ipp \
+  ../include/asio/generic/datagram_protocol.hpp \
+  ../include/asio/basic_datagram_socket.hpp \
+  ../include/asio/generic/basic_endpoint.hpp \
+  ../include/asio/generic/raw_protocol.hpp \
+  ../include/asio/basic_raw_socket.hpp \
+  ../include/asio/generic/seq_packet_protocol.hpp \
+  ../include/asio/basic_seq_packet_socket.hpp \
+  ../include/asio/generic/stream_protocol.hpp \
+  ../include/asio/basic_socket_iostream.hpp \
+  ../include/asio/handler_alloc_hook.hpp \
+  ../include/asio/handler_continuation_hook.hpp \
+  ../include/asio/handler_invoke_hook.hpp \
+  ../include/asio/high_resolution_timer.hpp \
+  ../include/asio/io_context.hpp \
+  ../include/asio/io_context_strand.hpp \
+  ../include/asio/detail/strand_service.hpp \
+  ../include/asio/detail/impl/strand_service.hpp \
+  ../include/asio/detail/impl/strand_service.ipp \
+  ../include/asio/io_service.hpp \
+  ../include/asio/io_service_strand.hpp \
+  ../include/asio/io_context_strand.hpp \
+  ../include/asio/ip/address.hpp \
+  ../include/asio/ip/address_v4.hpp \
+  ../include/asio/detail/array.hpp \
+  ../include/asio/ip/impl/address_v4.hpp \
+  ../include/asio/ip/impl/address_v4.ipp \
+  ../include/asio/ip/address_v6.hpp \
+  ../include/asio/ip/impl/address_v6.hpp \
+  ../include/asio/ip/impl/address_v6.ipp \
+  ../include/asio/ip/bad_address_cast.hpp \
+  ../include/asio/ip/impl/address.hpp \
+  ../include/asio/ip/impl/address.ipp \
+  ../include/asio/ip/address.hpp \
+  ../include/asio/ip/address_v4.hpp \
+  ../include/asio/ip/address_v4_iterator.hpp \
+  ../include/asio/ip/address_v4_range.hpp \
+  ../include/asio/ip/address_v4_iterator.hpp \
+  ../include/asio/ip/address_v6.hpp \
+  ../include/asio/ip/address_v6_iterator.hpp \
+  ../include/asio/ip/address_v6_range.hpp \
+  ../include/asio/ip/address_v6_iterator.hpp \
+  ../include/asio/ip/network_v4.hpp \
+  ../include/asio/ip/address_v4_range.hpp \
+  ../include/asio/ip/impl/network_v4.hpp \
+  ../include/asio/ip/impl/network_v4.ipp \
+  ../include/asio/ip/network_v4.hpp \
+  ../include/asio/ip/network_v6.hpp \
+  ../include/asio/ip/address_v6_range.hpp \
+  ../include/asio/ip/impl/network_v6.hpp \
+  ../include/asio/ip/impl/network_v6.ipp \
+  ../include/asio/ip/network_v6.hpp \
+  ../include/asio/ip/bad_address_cast.hpp \
+  ../include/asio/ip/basic_endpoint.hpp \
+  ../include/asio/ip/detail/endpoint.hpp \
+  ../include/asio/ip/detail/impl/endpoint.ipp \
+  ../include/asio/ip/impl/basic_endpoint.hpp \
+  ../include/asio/ip/basic_resolver.hpp \
+  ../include/asio/ip/basic_resolver_iterator.hpp \
+  ../include/asio/ip/basic_resolver_entry.hpp \
+  ../include/asio/ip/basic_resolver_query.hpp \
+  ../include/asio/ip/resolver_query_base.hpp \
+  ../include/asio/ip/resolver_base.hpp \
+  ../include/asio/ip/basic_resolver_results.hpp \
+  ../include/asio/detail/resolver_service.hpp \
+  ../include/asio/detail/resolve_endpoint_op.hpp \
+  ../include/asio/detail/resolve_op.hpp \
+  ../include/asio/detail/resolve_query_op.hpp \
+  ../include/asio/detail/resolver_service_base.hpp \
+  ../include/asio/detail/impl/resolver_service_base.ipp \
+  ../include/asio/ip/basic_resolver_entry.hpp \
+  ../include/asio/ip/basic_resolver_iterator.hpp \
+  ../include/asio/ip/basic_resolver_query.hpp \
+  ../include/asio/ip/host_name.hpp \
+  ../include/asio/ip/impl/host_name.ipp \
+  ../include/asio/ip/host_name.hpp \
+  ../include/asio/ip/icmp.hpp \
+  ../include/asio/ip/basic_endpoint.hpp \
+  ../include/asio/ip/basic_resolver.hpp \
+  ../include/asio/ip/multicast.hpp \
+  ../include/asio/ip/detail/socket_option.hpp \
+  ../include/asio/ip/resolver_base.hpp \
+  ../include/asio/ip/resolver_query_base.hpp \
+  ../include/asio/ip/tcp.hpp \
+  ../include/asio/basic_socket_acceptor.hpp \
+  ../include/asio/ip/udp.hpp \
+  ../include/asio/ip/unicast.hpp \
+  ../include/asio/ip/v6_only.hpp \
+  ../include/asio/is_applicable_property.hpp \
+  ../include/asio/is_executor.hpp \
+  ../include/asio/is_read_buffered.hpp \
+  ../include/asio/is_write_buffered.hpp \
+  ../include/asio/local/basic_endpoint.hpp \
+  ../include/asio/local/detail/endpoint.hpp \
+  ../include/asio/local/detail/impl/endpoint.ipp \
+  ../include/asio/local/connect_pair.hpp \
+  ../include/asio/local/basic_endpoint.hpp \
+  ../include/asio/local/datagram_protocol.hpp \
+  ../include/asio/local/stream_protocol.hpp \
+  ../include/asio/multiple_exceptions.hpp \
+  ../include/asio/packaged_task.hpp \
+  ../include/asio/detail/future.hpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/future \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/thread \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_futex.h \
+  ../include/asio/placeholders.hpp \
+  ../include/asio/posix/basic_descriptor.hpp \
+  ../include/asio/posix/basic_stream_descriptor.hpp \
+  ../include/asio/posix/basic_descriptor.hpp \
+  ../include/asio/posix/descriptor.hpp \
+  ../include/asio/posix/descriptor_base.hpp \
+  ../include/asio/posix/stream_descriptor.hpp \
+  ../include/asio/post.hpp \
+  ../include/asio/prefer.hpp \
+  ../include/asio/query.hpp \
+  ../include/asio/random_access_file.hpp \
+  ../include/asio/basic_random_access_file.hpp \
+  ../include/asio/read.hpp \
+  ../include/asio/impl/read.hpp \
+  ../include/asio/read_at.hpp \
+  ../include/asio/impl/read_at.hpp \
+  ../include/asio/read_until.hpp \
+  ../include/asio/detail/regex_fwd.hpp \
+  ../include/asio/impl/read_until.hpp \
+  ../include/asio/buffers_iterator.hpp \
+  ../include/asio/readable_pipe.hpp \
+  ../include/asio/recycling_allocator.hpp \
+  ../include/asio/redirect_error.hpp \
+  ../include/asio/impl/redirect_error.hpp \
+  ../include/asio/registered_buffer.hpp \
+  ../include/asio/require.hpp \
+  ../include/asio/require_concept.hpp \
+  ../include/asio/traits/require_concept_member.hpp \
+  ../include/asio/traits/require_concept_free.hpp \
+  ../include/asio/traits/static_require_concept.hpp \
+  ../include/asio/serial_port.hpp \
+  ../include/asio/basic_serial_port.hpp \
+  ../include/asio/serial_port_base.hpp \
+  ../include/asio/signal_set.hpp \
+  ../include/asio/basic_signal_set.hpp \
+  ../include/asio/socket_base.hpp \
+  ../include/asio/static_thread_pool.hpp \
+  ../include/asio/thread_pool.hpp \
+  ../include/asio/impl/thread_pool.hpp \
+  ../include/asio/detail/blocking_executor_op.hpp \
+  ../include/asio/detail/bulk_executor_op.hpp \
+  ../include/asio/impl/thread_pool.ipp \
+  ../include/asio/steady_timer.hpp \
+  ../include/asio/strand.hpp \
+  ../include/asio/detail/strand_executor_service.hpp \
+  ../include/asio/detail/impl/strand_executor_service.hpp \
+  ../include/asio/defer.hpp \
+  ../include/asio/dispatch.hpp \
+  ../include/asio/detail/impl/strand_executor_service.ipp \
+  ../include/asio/stream_file.hpp \
+  ../include/asio/basic_stream_file.hpp \
+  ../include/asio/streambuf.hpp \
+  ../include/asio/basic_streambuf.hpp \
+  ../include/asio/system_context.hpp \
+  ../include/asio/system_error.hpp \
+  ../include/asio/system_executor.hpp \
+  ../include/asio/system_timer.hpp \
+  ../include/asio/this_coro.hpp \
+  ../include/asio/thread.hpp \
+  ../include/asio/thread_pool.hpp \
+  ../include/asio/time_traits.hpp \
+  ../include/asio/use_awaitable.hpp \
+  ../include/asio/use_future.hpp \
+  ../include/asio/impl/use_future.hpp \
+  ../include/asio/packaged_task.hpp \
+  ../include/asio/uses_executor.hpp \
+  ../include/asio/version.hpp \
+  ../include/asio/wait_traits.hpp \
+  ../include/asio/windows/basic_object_handle.hpp \
+  ../include/asio/detail/win_object_handle_service.hpp \
+  ../include/asio/detail/impl/win_object_handle_service.ipp \
+  ../include/asio/windows/basic_overlapped_handle.hpp \
+  ../include/asio/windows/basic_random_access_handle.hpp \
+  ../include/asio/windows/basic_overlapped_handle.hpp \
+  ../include/asio/windows/basic_stream_handle.hpp \
+  ../include/asio/windows/object_handle.hpp \
+  ../include/asio/windows/basic_object_handle.hpp \
+  ../include/asio/windows/overlapped_handle.hpp \
+  ../include/asio/windows/overlapped_ptr.hpp \
+  ../include/asio/detail/win_iocp_overlapped_ptr.hpp \
+  ../include/asio/detail/win_iocp_overlapped_op.hpp \
+  ../include/asio/windows/random_access_handle.hpp \
+  ../include/asio/windows/basic_random_access_handle.hpp \
+  ../include/asio/windows/stream_handle.hpp \
+  ../include/asio/windows/basic_stream_handle.hpp \
+  ../include/asio/writable_pipe.hpp \
+  ../include/asio/write.hpp \
+  ../include/asio/write_at.hpp \
+  ../include/asio/impl/write_at.hpp \
+  ../head/message.h \
+  ../head/Utils.h \
+  ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.obj: ../cpp/FinalCompetitionData.cpp \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/process.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  ../head/FinalCompetitionData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_map \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/node_handle.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/enable_special_members.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h \
+  ../head/PartSaleData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h \
+  ../head/ZipOrder.h
 
 CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.obj: ../cpp/Part.cpp \
   ../head/Part.h \
@@ -2357,6 +3506,133 @@ CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.obj: ../cpp/PartData.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc
+
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.obj: ../cpp/PartSaleData.cpp \
+  ../head/PartSaleData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/locale.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/process.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h
 
 CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.obj: ../cpp/QueryResponser.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iomanip \
@@ -3358,7 +4634,9 @@ CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.obj: ../cpp/QueryResponser.cpp \
   ../include/asio/impl/write_at.hpp \
   ../head/message.h \
   ../head/Utils.h \
-  ../head/Part.h
+  ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h
 
 CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.obj: ../cpp/TotalData.cpp \
   ../head/TotalData.h \
@@ -3677,18 +4955,56 @@ CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.obj: ../cpp/Utils.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  ../head/Utils.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/math.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  ../head/Utils.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
   ../head/Part.h \
   ../head/ZipPart.h \
   ../head/ZipOrder.h \
-  ../head/PartData.h
+  ../head/PartData.h \
+  ../head/PartSaleData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h
 
 CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.obj: ../cpp/ZipOrder.cpp \
   ../head/ZipOrder.h \
@@ -4860,7 +6176,8 @@ CMakeFiles/cnsoftbei.dir/cpp/client.cpp.obj: ../cpp/client.cpp \
   ../head/Utils.h \
   ../head/Part.h \
   ../head/ZipOrder.h \
-  ../head/PartData.h
+  ../head/PartData.h \
+  ../head/PartSaleData.h
 
 CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.obj: ../cpp/dataReader.cpp \
   ../head/dataReader.h \
@@ -4998,14 +6315,24 @@ CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.obj: ../cpp/dataReader.cpp \
   ../head/Part.h \
   ../head/ZipPart.h \
   ../head/PartData.h \
+  ../head/PartSaleData.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -5024,19 +6351,21 @@ CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.obj: ../cpp/dataReader.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream
 
 CMakeFiles/cnsoftbei.dir/cpp/message.cpp.obj: ../cpp/message.cpp \
-  ../head/message.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -5044,21 +6373,33 @@ CMakeFiles/cnsoftbei.dir/cpp/message.cpp.obj: ../cpp/message.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
@@ -5066,47 +6407,18 @@ CMakeFiles/cnsoftbei.dir/cpp/message.cpp.obj: ../cpp/message.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/locale.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/stdio.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
@@ -5125,6 +6437,18 @@ CMakeFiles/cnsoftbei.dir/cpp/message.cpp.obj: ../cpp/message.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
@@ -5140,7 +6464,29 @@ CMakeFiles/cnsoftbei.dir/cpp/message.cpp.obj: ../cpp/message.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  ../head/message.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstring \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
 
 CMakeFiles/cnsoftbei.dir/cpp/server.cpp.obj: ../cpp/server.cpp \
   ../head/server.h \
@@ -6107,7 +7453,9 @@ CMakeFiles/cnsoftbei.dir/cpp/server.cpp.obj: ../cpp/server.cpp \
   ../head/ZipPart.h \
   ../head/client.h \
   ../head/Utils.h \
-  ../head/Part.h
+  ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h
 
 CMakeFiles/cnsoftbei.dir/main.cpp.obj: ../main.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
@@ -7078,6 +8426,8 @@ CMakeFiles/cnsoftbei.dir/main.cpp.obj: ../main.cpp \
   ../head/message.h \
   ../head/Utils.h \
   ../head/Part.h \
+  ../head/PartSaleData.h \
+  ../head/FinalCompetitionData.h \
   ../head/server.h \
   ../head/Calculator.h \
   ../head/client.h \
@@ -7105,7 +8455,8 @@ CMakeFiles/cnsoftbei.dir/main.cpp.obj: ../main.cpp \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
   D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
-  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h
+  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+  ../head/FinalCompetitionCalculator.h
 
 
 ../include/asio/basic_io_object.hpp:
@@ -7406,6 +8757,8 @@ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw
 
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
 
+../head/PartSaleData.h:
+
 ../include/asio/signal_set.hpp:
 
 ../include/asio/detail/non_const_lvalue.hpp:
@@ -7445,6 +8798,10 @@ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h:
 
 ../include/asio/detail/impl/thread_context.ipp:
+
+../head/FinalCompetitionCalculator.h:
+
+../head/FinalCompetitionData.h:
 
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:
 
@@ -7675,6 +9032,8 @@ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/inclu
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h:
 
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
+
+../cpp/FinalCompetitionData.cpp:
 
 ../include/asio/impl/write_at.hpp:
 
@@ -8863,6 +10222,10 @@ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw
 ../head/Utils.h:
 
 ../head/Part.h:
+
+../cpp/FinalCompetitionCalculator.cpp:
+
+../cpp/PartSaleData.cpp:
 
 D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random:
 

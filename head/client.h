@@ -45,6 +45,8 @@ public:
     void sendLoad();
     void sendStart(int idx);
     void sendPart(ZipPart &zippart);
+    void sendPartSaleData(PartSaleData &partSaleData);
+    void sendFinalAns(long double ans);
     //调用ios.run
     void runIos() { ios.run(); }
     //调用ios.reset

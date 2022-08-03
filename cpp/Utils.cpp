@@ -6,6 +6,8 @@
 #include <tuple>
 #include <iostream>
 #include <string>
+#include <random>
+#include <ctime>
 #include "../head/Utils.h"
 //分割字符串，传入分隔符，类似于python的split
 std::vector<std::string> Utils::split(const std::string &str, const char ch)
@@ -499,5 +501,63 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
     else{
         return WRONGINPUT;
     }
+}
+
+std::string Utils::getRandomContainer() {
+    //随机container
+    std::vector<std::string>containers={"WRAP JAR","MED DRUM","SM BOX","JUMBO BOX","LG BAG","SM CAN",
+                              "MED CAN","WRAP DRUM","LG PACK","SM JAR","WRAP PACK","MED BAG","LG DRUM",
+                              "JUMBO JAR","JUMBO PKG","MED PKG","MED CASE","LG BOX","WRAP CAN","JUMBO BAG",
+                              "WRAP BOX","SM CASE","LG CASE","LG PKG","LG CAN","MED JAR","LG JAR","JUMBO PACK",
+                              "SM DRUM","SM PACK","SM BAG","MED BOX","MED PACK","SM PKG","JUMBO CAN","WRAP BAG",
+                              "JUMBO CASE","WRAP PKG","JUMBO DRUM","WRAP CASE"
+    };
+    //随机数发生器
+    std::default_random_engine randomEngine(time(nullptr));
+    std::uniform_int_distribution<int> brandGen(1,5);
+    std::uniform_int_distribution<int> containerGen(0,containers.size()-1);
+    std::pair<int,int> brand={brandGen(randomEngine),brandGen(randomEngine)};
+    return containers[containerGen(randomEngine)];
+}
+
+std::pair<int, int> Utils::getRandomBrand() {
+    std::default_random_engine randomEngine(time(nullptr));
+    std::uniform_int_distribution<int> brandGen(1,5);
+    return {brandGen(randomEngine),brandGen(randomEngine)};
+}
+
+std::string Utils::zipPartSaleDataToString(const PartSaleData partSaleData,int from) {
+    return std::to_string(partSaleData.partid)+'|'+ std::to_string(partSaleData.orderCount)+'|'+ std::to_string(partSaleData.totalSale)+'|'+std::to_string(from)+'|';
+}
+
+std::pair<PartSaleData,int> Utils::unzipPartSaleData(const std::string &s) {
+    return unzipPartSaleData(s.c_str());
+}
+
+std::pair<PartSaleData,int> Utils::unzipPartSaleData(const char *s) {
+    int cnt=0;
+    std::pair<PartSaleData,int> rec={{0,0,0},0};
+    for(int i=0;;i++){
+        char ch=s[i];
+        if(ch=='|'){
+            cnt++;
+            if(cnt==4)  break;
+        }
+        else{
+            if(cnt==0){
+                rec.first.partid=rec.first.partid*10+ch-'0';
+            }
+            else if(cnt==1){
+                rec.first.orderCount=rec.first.orderCount*10+ch-'0';
+            }
+            else if(cnt==2){
+                rec.first.totalSale=rec.first.totalSale*10+ch-'0';
+            }
+            else{
+                rec.second=rec.second*10+ch-'0';
+            }
+        }
+    }
+    return rec;
 }
 

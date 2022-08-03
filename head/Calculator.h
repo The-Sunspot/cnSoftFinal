@@ -9,6 +9,7 @@
 #include "dataReader.h"
 #include "client.h"
 #include "Utils.h"
+#include "FinalCompetitionData.h"
 #include <mutex>
 #ifdef _WIN64
 #define TIME_TRANS 1000
@@ -34,7 +35,8 @@ public:
     dataReader &reader;
     //消息发送对象
     client *sendMessager;
-
+    //决赛统计数据
+    FinalCompetitionData data;
     //读取数据，并记录时间
     void loadDatas();
     //修改flag量

@@ -958,4 +958,5 @@ CMakeFiles/cnsoftbei.dir/cpp/server.cpp.obj: \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multiset.h \
  D:/ClionCode/ccc/head/dataReader.h D:/ClionCode/ccc/head/ZipPart.h \
  D:/ClionCode/ccc/head/client.h D:/ClionCode/ccc/head/Utils.h \
- D:/ClionCode/ccc/head/Part.h
+ D:/ClionCode/ccc/head/Part.h D:/ClionCode/ccc/head/PartSaleData.h \
+ D:/ClionCode/ccc/head/FinalCompetitionData.h

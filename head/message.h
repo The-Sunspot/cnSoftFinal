@@ -29,6 +29,8 @@ public:
         totalData, //统计信息头
         part,      //零件头
         partData,  //零件信息头
+        finalPart, //决赛————订单销售头
+        finalAns,  //决赛————查询结果头
         unknown    //未知情况
     };
     message(headEnum head, const char *body);

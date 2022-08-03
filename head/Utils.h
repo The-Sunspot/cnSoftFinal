@@ -12,6 +12,7 @@
 #include "ZipPart.h"
 #include "ZipOrder.h"
 #include "PartData.h"
+#include "PartSaleData.h"
 
 class Utils
 {
@@ -56,6 +57,11 @@ public:
     //反序列化 char*->pair<id,<count,sales>>
     std::pair<int, std::pair<int, int>> static unZipTotalData(const char *line);
 
+    static std::string zipPartSaleDataToString(const PartSaleData partSaleData, int from);
+
+    static std::pair<PartSaleData,int> unzipPartSaleData(const std::string &s);
+    static std::pair<PartSaleData,int> unzipPartSaleData(const char *s);
+
     //返回一个string，作为进度条
     // x取0-10的整数
     static std::string getTag(int x);
@@ -65,6 +71,10 @@ public:
     static std::pair<int, int> judgeInput(const std::string &s);
 
     static std::tuple<std::string,std::pair<int,int>,std::string> judgeInputExtended(const std::string &s);
+
+
+    static std::string getRandomContainer();
+    static std::pair<int,int> getRandomBrand();
 };
 
 #endif // CNSOFTBEI_UTILS_H

@@ -91,10 +91,19 @@
 		<Unit filename="D:/ClionCode/ccc/cpp/Calculator.cpp">
 			<Option target="cnsoftbei"/>
 		</Unit>
+		<Unit filename="D:/ClionCode/ccc/cpp/FinalCompetitionCalculator.cpp">
+			<Option target="cnsoftbei"/>
+		</Unit>
+		<Unit filename="D:/ClionCode/ccc/cpp/FinalCompetitionData.cpp">
+			<Option target="cnsoftbei"/>
+		</Unit>
 		<Unit filename="D:/ClionCode/ccc/cpp/Part.cpp">
 			<Option target="cnsoftbei"/>
 		</Unit>
 		<Unit filename="D:/ClionCode/ccc/cpp/PartData.cpp">
+			<Option target="cnsoftbei"/>
+		</Unit>
+		<Unit filename="D:/ClionCode/ccc/cpp/PartSaleData.cpp">
 			<Option target="cnsoftbei"/>
 		</Unit>
 		<Unit filename="D:/ClionCode/ccc/cpp/QueryResponser.cpp">

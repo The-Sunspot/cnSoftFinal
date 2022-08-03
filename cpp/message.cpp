@@ -1,9 +1,11 @@
 //
 // Created by 光球层上的黑子 on 2022/7/6.
 //
+#include <iostream>
 #include "../head/message.h"
 
-message::message(message::headEnum head, const char *body)    {
+message::message(message::headEnum head, const char *body){
+    //std::cout<<"create msg"<<body<<std::endl;
     memset(this->head,'\0',sizeof this->head);
     memset(this->body,'\0',sizeof this->body);
     memset(this->sendMsg,'\0',sizeof this->sendMsg);
@@ -93,6 +95,12 @@ void message::setHead(headEnum e)
         case unknown:
             strcpy(head, "x");
             break;
+        case finalPart:
+            strcpy(head, "P");
+            break;
+        case finalAns:
+            strcpy(head, "A");
+            break;
     }
     strcpy(sendMsg, head);
     for (int i = 0; i < MAX_HEAD_LENGTH; i++)
@@ -111,5 +119,7 @@ message::headEnum message::getHeadEnum(){
     else if(strcmp(head,"t")==0) return totalData;
     else if(strcmp(head,"p")==0) return part;
     else if(strcmp(head,"d")==0) return partData;
+    else if(strcmp(head,"P")==0) return finalPart;
+    else if(strcmp(head,"A")==0) return finalAns;
     else return unknown;
 }

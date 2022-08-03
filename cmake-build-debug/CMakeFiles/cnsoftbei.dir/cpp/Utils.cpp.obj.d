@@ -137,13 +137,51 @@ CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.obj: \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
- D:/ClionCode/ccc/head/Utils.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/math.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/ClionCode/ccc/head/Utils.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
  D:/ClionCode/ccc/head/Part.h D:/ClionCode/ccc/head/ZipPart.h \
- D:/ClionCode/ccc/head/ZipOrder.h D:/ClionCode/ccc/head/PartData.h
+ D:/ClionCode/ccc/head/ZipOrder.h D:/ClionCode/ccc/head/PartData.h \
+ D:/ClionCode/ccc/head/PartSaleData.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h

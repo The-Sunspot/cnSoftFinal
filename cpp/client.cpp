@@ -56,3 +56,11 @@ void client::send(const message &msg)
     strcpy(msgToServer, msg.getSendMsg());
     asio::async_write(sock, asio::buffer(msgToServer), [](const asio::error_code &ec, std::size_t bytes_transferred) {});
 }
+
+void client::sendPartSaleData(PartSaleData &partSaleData) {
+    send(message(message::headEnum::finalPart,Utils::zipPartSaleDataToString(partSaleData,this->localServerPort).c_str()));
+}
+
+void client::sendFinalAns(long double ans) {
+    send(message(message::headEnum::finalAns, to_string(ans).c_str()));
+}

@@ -131,15 +131,24 @@ CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.obj: \
  D:/ClionCode/ccc/head/Utils.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/climits \
  D:/ClionCode/ccc/head/Part.h D:/ClionCode/ccc/head/ZipPart.h \
- D:/ClionCode/ccc/head/PartData.h \
+ D:/ClionCode/ccc/head/PartData.h D:/ClionCode/ccc/head/PartSaleData.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/mutex \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_mutex.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
@@ -158,8 +167,4 @@ CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.obj: \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/time.h \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/_timeval.h \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/x86_64-w64-mingw32/include/pthread_time.h
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream

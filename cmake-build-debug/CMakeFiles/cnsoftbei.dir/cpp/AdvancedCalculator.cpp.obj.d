@@ -972,4 +972,5 @@ CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.obj: \
  D:/ClionCode/ccc/include/asio/write_at.hpp \
  D:/ClionCode/ccc/include/asio/impl/write_at.hpp \
  D:/ClionCode/ccc/head/message.h D:/ClionCode/ccc/head/Utils.h \
- D:/ClionCode/ccc/head/Part.h
+ D:/ClionCode/ccc/head/Part.h D:/ClionCode/ccc/head/PartSaleData.h \
+ D:/ClionCode/ccc/head/FinalCompetitionData.h

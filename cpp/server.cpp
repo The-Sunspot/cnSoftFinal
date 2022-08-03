@@ -112,6 +112,21 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         break;
                                     }
 
+                                    case message::finalPart: {
+
+                                        auto mssg = Utils::unzipPartSaleData(m.getBody());
+                                        if (mssg.second == this->port) continue;
+                                        calculator.data.insertReceivePartData(mssg.first);
+                                        //calculator.data.insertPartData(mssg.first);
+                                        calculator.sendMessager->send(m);
+                                    }
+                                    case message::finalAns: {
+                                        long double ans = stold(m.getBody());
+                                        calculator.data.addUnderSales(ans);
+                                        //calculator.data.underSales += ans;
+                                        break;
+                                    }
+
                                     case message::unknown:
                                         break;
                                 }

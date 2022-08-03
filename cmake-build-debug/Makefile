@@ -200,6 +200,54 @@ cpp/Calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.s
 .PHONY : cpp/Calculator.cpp.s
 
+cpp/FinalCompetitionCalculator.obj: cpp/FinalCompetitionCalculator.cpp.obj
+.PHONY : cpp/FinalCompetitionCalculator.obj
+
+# target to build an object file
+cpp/FinalCompetitionCalculator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.obj
+.PHONY : cpp/FinalCompetitionCalculator.cpp.obj
+
+cpp/FinalCompetitionCalculator.i: cpp/FinalCompetitionCalculator.cpp.i
+.PHONY : cpp/FinalCompetitionCalculator.i
+
+# target to preprocess a source file
+cpp/FinalCompetitionCalculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.i
+.PHONY : cpp/FinalCompetitionCalculator.cpp.i
+
+cpp/FinalCompetitionCalculator.s: cpp/FinalCompetitionCalculator.cpp.s
+.PHONY : cpp/FinalCompetitionCalculator.s
+
+# target to generate assembly for a file
+cpp/FinalCompetitionCalculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.s
+.PHONY : cpp/FinalCompetitionCalculator.cpp.s
+
+cpp/FinalCompetitionData.obj: cpp/FinalCompetitionData.cpp.obj
+.PHONY : cpp/FinalCompetitionData.obj
+
+# target to build an object file
+cpp/FinalCompetitionData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.obj
+.PHONY : cpp/FinalCompetitionData.cpp.obj
+
+cpp/FinalCompetitionData.i: cpp/FinalCompetitionData.cpp.i
+.PHONY : cpp/FinalCompetitionData.i
+
+# target to preprocess a source file
+cpp/FinalCompetitionData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.i
+.PHONY : cpp/FinalCompetitionData.cpp.i
+
+cpp/FinalCompetitionData.s: cpp/FinalCompetitionData.cpp.s
+.PHONY : cpp/FinalCompetitionData.s
+
+# target to generate assembly for a file
+cpp/FinalCompetitionData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.s
+.PHONY : cpp/FinalCompetitionData.cpp.s
+
 cpp/Part.obj: cpp/Part.cpp.obj
 .PHONY : cpp/Part.obj
 
@@ -247,6 +295,30 @@ cpp/PartData.s: cpp/PartData.cpp.s
 cpp/PartData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.s
 .PHONY : cpp/PartData.cpp.s
+
+cpp/PartSaleData.obj: cpp/PartSaleData.cpp.obj
+.PHONY : cpp/PartSaleData.obj
+
+# target to build an object file
+cpp/PartSaleData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.obj
+.PHONY : cpp/PartSaleData.cpp.obj
+
+cpp/PartSaleData.i: cpp/PartSaleData.cpp.i
+.PHONY : cpp/PartSaleData.i
+
+# target to preprocess a source file
+cpp/PartSaleData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.i
+.PHONY : cpp/PartSaleData.cpp.i
+
+cpp/PartSaleData.s: cpp/PartSaleData.cpp.s
+.PHONY : cpp/PartSaleData.s
+
+# target to generate assembly for a file
+cpp/PartSaleData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cnsoftbei.dir\build.make CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.s
+.PHONY : cpp/PartSaleData.cpp.s
 
 cpp/QueryResponser.obj: cpp/QueryResponser.cpp.obj
 .PHONY : cpp/QueryResponser.obj
@@ -506,12 +578,21 @@ help:
 	@echo ... cpp/Calculator.obj
 	@echo ... cpp/Calculator.i
 	@echo ... cpp/Calculator.s
+	@echo ... cpp/FinalCompetitionCalculator.obj
+	@echo ... cpp/FinalCompetitionCalculator.i
+	@echo ... cpp/FinalCompetitionCalculator.s
+	@echo ... cpp/FinalCompetitionData.obj
+	@echo ... cpp/FinalCompetitionData.i
+	@echo ... cpp/FinalCompetitionData.s
 	@echo ... cpp/Part.obj
 	@echo ... cpp/Part.i
 	@echo ... cpp/Part.s
 	@echo ... cpp/PartData.obj
 	@echo ... cpp/PartData.i
 	@echo ... cpp/PartData.s
+	@echo ... cpp/PartSaleData.obj
+	@echo ... cpp/PartSaleData.i
+	@echo ... cpp/PartSaleData.s
 	@echo ... cpp/QueryResponser.obj
 	@echo ... cpp/QueryResponser.i
 	@echo ... cpp/QueryResponser.s

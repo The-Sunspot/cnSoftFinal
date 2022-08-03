@@ -959,9 +959,11 @@ CMakeFiles/cnsoftbei.dir/main.cpp.obj: D:\ClionCode\ccc\main.cpp \
  D:/ClionCode/ccc/include/asio/write_at.hpp \
  D:/ClionCode/ccc/include/asio/impl/write_at.hpp \
  D:\ClionCode\ccc\head/message.h D:\ClionCode\ccc\head/Utils.h \
- D:\ClionCode\ccc\head/Part.h D:\ClionCode\ccc\head/server.h \
- D:\ClionCode\ccc\head/Calculator.h D:\ClionCode\ccc\head/client.h \
- D:\ClionCode\ccc\head/Utils.h D:\ClionCode\ccc\head/AdvancedCalculator.h \
+ D:\ClionCode\ccc\head/Part.h D:\ClionCode\ccc\head/PartSaleData.h \
+ D:\ClionCode\ccc\head/FinalCompetitionData.h \
+ D:\ClionCode\ccc\head/server.h D:\ClionCode\ccc\head/Calculator.h \
+ D:\ClionCode\ccc\head/client.h D:\ClionCode\ccc\head/Utils.h \
+ D:\ClionCode\ccc\head/AdvancedCalculator.h \
  D:\ClionCode\ccc\head/QueryResponser.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
@@ -984,4 +986,5 @@ CMakeFiles/cnsoftbei.dir/main.cpp.obj: D:\ClionCode\ccc\main.cpp \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
- D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h
+ D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+ D:\ClionCode\ccc\head/FinalCompetitionCalculator.h

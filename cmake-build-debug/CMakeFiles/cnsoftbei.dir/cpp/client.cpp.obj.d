@@ -947,4 +947,5 @@ CMakeFiles/cnsoftbei.dir/cpp/client.cpp.obj: \
  D:/ClionCode/ccc/include/asio/impl/write_at.hpp \
  D:/ClionCode/ccc/head/message.h D:/ClionCode/ccc/head/ZipPart.h \
  D:/ClionCode/ccc/head/Utils.h D:/ClionCode/ccc/head/Part.h \
- D:/ClionCode/ccc/head/ZipOrder.h D:/ClionCode/ccc/head/PartData.h
+ D:/ClionCode/ccc/head/ZipOrder.h D:/ClionCode/ccc/head/PartData.h \
+ D:/ClionCode/ccc/head/PartSaleData.h

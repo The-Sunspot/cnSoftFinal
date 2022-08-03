@@ -958,7 +958,8 @@ CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.obj: \
  D:/ClionCode/ccc/include/asio/write_at.hpp \
  D:/ClionCode/ccc/include/asio/impl/write_at.hpp \
  D:/ClionCode/ccc/head/message.h D:/ClionCode/ccc/head/Utils.h \
- D:/ClionCode/ccc/head/Part.h \
+ D:/ClionCode/ccc/head/Part.h D:/ClionCode/ccc/head/PartSaleData.h \
+ D:/ClionCode/ccc/head/FinalCompetitionData.h \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iomanip \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale \
  D:/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.h \
