@@ -63,11 +63,11 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                                 dif = i+1;
                                                 break;
                                             }
-                                        cout<<"finish::"<<temp<<endl;
+                                        // cout<<"finish::"<<temp<<endl;
                                         int idx=stoi(temp.substr(0,dif));
-                                        cout<<"idx::"<<idx<<endl;
+                                        // cout<<"idx::"<<idx<<endl;
                                         temp=temp.substr(dif);
-                                        cout<<"cnt::"<<temp<<endl;
+                                        // cout<<"cnt::"<<temp<<endl;
 
                                         if(calculator.finish_index!=idx)//finish标号与当前的同步标号不同，则直接舍弃
                                           continue;
@@ -134,7 +134,8 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         int key=stoi(partKey);
                                         if(calculator.partKeyMap.count(key))
                                           continue;
-                                        calculator.partKeyMap[stoi(partKey)]=1;
+                                        // calculator.partKeyMap[stoi(partKey)]=1;
+                                        calculator.addPartKey(key);
                                         calculator.sendMessager->send(message(message::partKey, partKey.c_str()));
                                         break;
                                     }

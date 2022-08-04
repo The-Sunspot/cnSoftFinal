@@ -38,6 +38,7 @@ public:
     client *sendMessager;
     //决赛预先零件通信
     unordered_map<int, int> partKeyMap; //不需要保证线程安全
+    std::mutex keymap_mtx;
     //决赛统计数据
     FinalCompetitionData data;
     //读取数据，并记录时间
@@ -67,6 +68,8 @@ public:
     void sendPart(ZipPart &part);
     //进程间同步
     void doAsync(condition_variable &cv, unique_lock<mutex> &lck);
+
+    void addPartKey(int key);
 };
 
 #endif // CNSOFTBEI_CALCULATOR_H

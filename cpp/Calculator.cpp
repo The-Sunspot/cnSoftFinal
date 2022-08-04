@@ -198,3 +198,9 @@ void Calculator::doAsync(condition_variable &cv, unique_lock<mutex> &lck)
     sendMessager->resetIos();
     setFinishAndNotify(false, true);
 }
+
+void Calculator::addPartKey(int key)
+{
+    std::lock_guard lg(keymap_mtx);
+    partKeyMap[key] = 1;
+}

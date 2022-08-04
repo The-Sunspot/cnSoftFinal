@@ -79,12 +79,14 @@ void FinalCompetitionCalculator::preprocess(condition_variable &cv, unique_lock<
     {
         if (part.pContainer == this->targetContainer && part.pBrandCode == this->targetBrand)
         {
-            partKeyMap[part.pPartkey] = 1;
+            // partKeyMap[part.pPartkey] = 1;
+            addPartKey(part.pPartkey);
             sendMessager->send(message(message::partKey, to_string(part.pPartkey).c_str()));
             this->data.insertPartData({part.pPartkey, 0, 0});
         }
     }
     doAsync(cv, lck);
+    // cout << "partkeymap size:" << partKeyMap.size() << endl;
     //遍历订单，进行统计
     for (auto &order : this->reader.orders)
     {

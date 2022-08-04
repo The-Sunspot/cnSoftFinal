@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
     // FinalCompetitionCalculator calculator(totalData, reader);
     // 7027145.477142
-    FinalCompetitionCalculator calculator({2, 3}, "WRAP JAR", totalData, reader);
+    FinalCompetitionCalculator calculator({4, 2}, "LG BOX", totalData, reader);
     //接发信息类实例，
     server loadMessager(serverPort[index], cv, calculator, totalData);
     client *sendMessager = nullptr; // 1号实例顺序不同，暂不能赋值
@@ -151,8 +151,6 @@ int main(int argc, char *argv[])
     calculator.loadDatas();
 
     // start
-    //普通进程无需读入
-    if (index != 1)
     {
         // cout << "wait for calculate. input \'select\' in 1st program to do calculate and output." << endl;
         cout << "wait for calculate. input \'select\' to do calculate and output.\ninput: ";
@@ -185,37 +183,5 @@ int main(int argc, char *argv[])
             SYS_PAUSE;
         }
         return 0;
-    }
-    else
-    { //主进程
-        cout << "wait for calculate. input \'select\' to do calculate and output.\ninput: ";
-
-        //同步
-        cv.wait(lck);
-        //传递
-        sendMessager->sendStart(calculator.select_idx);
-        //计算
-        calculator.doCalculate(cv, lck);
-
-        if (calculator.select_idx == calculator.index)
-        {
-            //            queryResponser.printSaleInfo();
-            //            queryResponser.randomSelect();
-            //交互部分
-            //            cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
-            //            cout
-            //                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
-            //                << R"('select c/container {con}' to query container {con},')" << endl
-            //                << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
-            //                << endl;
-            //            cout << "input:";
-            // interactThread.join();
-            cv.wait(lck);
-        }
-        else
-        {
-            cout << "calculate over. program exit" << endl;
-            SYS_PAUSE;
-        }
     }
 }
