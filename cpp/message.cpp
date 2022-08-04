@@ -4,26 +4,29 @@
 #include <iostream>
 #include "../head/message.h"
 
-message::message(message::headEnum head, const char *body){
-    //std::cout<<"create msg"<<body<<std::endl;
-    memset(this->head,'\0',sizeof this->head);
-    memset(this->body,'\0',sizeof this->body);
-    memset(this->sendMsg,'\0',sizeof this->sendMsg);
+message::message(message::headEnum head, const char *body)
+{
+    // std::cout<<"create msg"<<body<<std::endl;
+    memset(this->head, '\0', sizeof this->head);
+    memset(this->body, '\0', sizeof this->body);
+    memset(this->sendMsg, '\0', sizeof this->sendMsg);
     this->setHead(head);
     this->setBody(body);
 }
 
-message::message(message::headEnum head)    {
-    memset(this->head,'\0',sizeof this->head);
-    memset(this->body,'\0',sizeof this->body);
-    memset(this->sendMsg,'\0',sizeof this->sendMsg);
+message::message(message::headEnum head)
+{
+    memset(this->head, '\0', sizeof this->head);
+    memset(this->body, '\0', sizeof this->body);
+    memset(this->sendMsg, '\0', sizeof this->sendMsg);
     this->setHead(head);
 }
 
-message::message(const char *s){
-    memset(this->head,'\0',sizeof this->head);
-    memset(this->body,'\0',sizeof this->body);
-    memset(this->sendMsg,'\0',sizeof this->sendMsg);
+message::message(const char *s)
+{
+    memset(this->head, '\0', sizeof this->head);
+    memset(this->body, '\0', sizeof this->body);
+    memset(this->sendMsg, '\0', sizeof this->sendMsg);
     for (int i = 0; i < MAX_HEAD_LENGTH; i++)
     {
         if (s[i] == ' ')
@@ -40,7 +43,6 @@ message::message(const char *s){
         if (s[i + MAX_HEAD_LENGTH] == '\0')
             break;
     }
-
 };
 const char *const message::getHead() const
 {
@@ -65,42 +67,45 @@ void message::setHead(headEnum e)
     memset(head, 0, sizeof head);
     switch (e)
     {
-        case load:
-            strcpy(head, "l");
-            break;
-        case start:
-            strcpy(head, "s");
-            break;
-        case order:
-            strcpy(head, "o");
-            break;
-        case connect:
-            strcpy(head, "c");
-            break;
-        case finish:
-            strcpy(head, "f");
-            break;
-        case underSale:
-            strcpy(head, "u");
-            break;
-        case totalData:
-            strcpy(head, "t");
-            break;
-        case part:
-            strcpy(head, "p");
-            break;
-        case partData:
-            strcpy(head, "d");
-            break;
-        case unknown:
-            strcpy(head, "x");
-            break;
-        case finalPart:
-            strcpy(head, "P");
-            break;
-        case finalAns:
-            strcpy(head, "A");
-            break;
+    case load:
+        strcpy(head, "l");
+        break;
+    case start:
+        strcpy(head, "s");
+        break;
+    case order:
+        strcpy(head, "o");
+        break;
+    case connect:
+        strcpy(head, "c");
+        break;
+    case finish:
+        strcpy(head, "f");
+        break;
+    case underSale:
+        strcpy(head, "u");
+        break;
+    case totalData:
+        strcpy(head, "t");
+        break;
+    case part:
+        strcpy(head, "p");
+        break;
+    case partData:
+        strcpy(head, "d");
+        break;
+    case unknown:
+        strcpy(head, "x");
+        break;
+    case partKey:
+        strcpy(head, "k");
+        break;
+    case finalPart:
+        strcpy(head, "P");
+        break;
+    case finalAns:
+        strcpy(head, "A");
+        break;
     }
     strcpy(sendMsg, head);
     for (int i = 0; i < MAX_HEAD_LENGTH; i++)
@@ -109,17 +114,32 @@ void message::setHead(headEnum e)
             sendMsg[i] = ' ';
     }
 }
-message::headEnum message::getHeadEnum(){
-    if(strcmp(head,"l")==0) return load;
-    else if(strcmp(head,"s")==0) return start;
-    else if(strcmp(head,"o")==0) return order;
-    else if(strcmp(head,"c")==0) return connect;
-    else if(strcmp(head,"f")==0) return finish;
-    else if(strcmp(head,"u")==0) return underSale;
-    else if(strcmp(head,"t")==0) return totalData;
-    else if(strcmp(head,"p")==0) return part;
-    else if(strcmp(head,"d")==0) return partData;
-    else if(strcmp(head,"P")==0) return finalPart;
-    else if(strcmp(head,"A")==0) return finalAns;
-    else return unknown;
+message::headEnum message::getHeadEnum()
+{
+    if (strcmp(head, "l") == 0)
+        return load;
+    else if (strcmp(head, "s") == 0)
+        return start;
+    else if (strcmp(head, "o") == 0)
+        return order;
+    else if (strcmp(head, "c") == 0)
+        return connect;
+    else if (strcmp(head, "f") == 0)
+        return finish;
+    else if (strcmp(head, "u") == 0)
+        return underSale;
+    else if (strcmp(head, "t") == 0)
+        return totalData;
+    else if (strcmp(head, "p") == 0)
+        return part;
+    else if (strcmp(head, "d") == 0)
+        return partData;
+    else if (strcmp(head, "k") == 0)
+        return partKey;
+    else if (strcmp(head, "P") == 0)
+        return finalPart;
+    else if (strcmp(head, "A") == 0)
+        return finalAns;
+    else
+        return unknown;
 }

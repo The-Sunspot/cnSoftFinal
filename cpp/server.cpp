@@ -54,11 +54,28 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                             //没结束，忽略
                                         else if(!calculator.is_finished)
                                             continue;
+                                        
+                                        string temp=m.getBody();
+                                        int len = temp.length(), dif;
+                                        for (int i = 0; i < len; i++)
+                                            if (temp[i] == '|')
+                                            {
+                                                dif = i+1;
+                                                break;
+                                            }
+                                        // cout<<"finish::"<<temp<<endl;
+                                        int idx=stoi(temp.substr(0,dif));
+                                        // cout<<"idx::"<<idx<<endl;
+                                        temp=temp.substr(dif);
+                                        // cout<<"cnt::"<<temp<<endl;
+
+                                        if(calculator.finish_index!=idx)//finish标号与当前的同步标号不同，则直接舍弃
+                                          continue;
                                         //检查是否满足同步条件
-                                        if(calculator.checkFinish(m.getBody()))
+                                        if(calculator.checkFinish(temp.c_str()))
                                         {
                                             //转发
-                                            calculator.sendFinish(m.getBody());
+                                            calculator.sendFinish(temp.c_str());
                                             //通知
                                             // calculator.setNotify(true);
                                             cv.notify_one();
@@ -67,7 +84,7 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         else if(calculator.is_finished)
                                         {
                                             //转发
-                                            calculator.sendFinish(m.getBody());
+                                            calculator.sendFinish(temp.c_str());
                                         }
                                         break;
                                     }
@@ -111,11 +128,17 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         calculator.totalData.mergePartData(partData);
                                         break;
                                     }
+                                    case message::partKey:{
+                                        auto partKey=(string)m.getBody();
+                                        // cout<<"get partKey:"<<stoi(partKey)<<endl;
+                                        calculator.partKeyMap[stoi(partKey)]=1;
+                                        break;
+                                    }
 
                                     case message::finalPart: {
 
                                         auto mssg = Utils::unzipPartSaleData(m.getBody());
-                                        if (mssg.second == this->port) continue;
+                                        if (mssg.second == this->port) continue;//自己发出去的转了一圈回来了，则不继续转发
                                         calculator.data.insertReceivePartData(mssg.first);
                                         //calculator.data.insertPartData(mssg.first);
                                         calculator.sendMessager->send(m);

@@ -21,6 +21,16 @@
 },
 {
   "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o -c /home/wzj/cnSoftFinal/cpp/FinalCompetitionCalculator.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/FinalCompetitionCalculator.cpp"
+},
+{
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o -c /home/wzj/cnSoftFinal/cpp/FinalCompetitionData.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/FinalCompetitionData.cpp"
+},
+{
+  "directory": "/home/wzj/cnSoftFinal/build",
   "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o -c /home/wzj/cnSoftFinal/cpp/Part.cpp",
   "file": "/home/wzj/cnSoftFinal/cpp/Part.cpp"
 },
@@ -28,6 +38,11 @@
   "directory": "/home/wzj/cnSoftFinal/build",
   "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o -c /home/wzj/cnSoftFinal/cpp/PartData.cpp",
   "file": "/home/wzj/cnSoftFinal/cpp/PartData.cpp"
+},
+{
+  "directory": "/home/wzj/cnSoftFinal/build",
+  "command": "/usr/bin/g++  -I/home/wzj/cnSoftFinal/include  -O3  -g -DASIO_STANDALONE -std=gnu++17 -o CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o -c /home/wzj/cnSoftFinal/cpp/PartSaleData.cpp",
+  "file": "/home/wzj/cnSoftFinal/cpp/PartSaleData.cpp"
 },
 {
   "directory": "/home/wzj/cnSoftFinal/build",

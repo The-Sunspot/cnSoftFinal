@@ -46,8 +46,8 @@ void Calculator::solveOrder(ZipOrder &order)
 
     //找到这个零件品牌对应的统计数据
     auto &targetBrandData = totalData.datas[brand.first - 1][brand.second - 1];
-    string container=reader.parts[reader.partIdHash[order.lPartkey]].pContainer;
-    targetBrandData->updateData(order,container);
+    string container = reader.parts[reader.partIdHash[order.lPartkey]].pContainer;
+    targetBrandData->updateData(order, container);
     totalData.addLocalTotalSales(order.lQuantity);
 }
 //计算主控类
@@ -153,16 +153,19 @@ void Calculator::setNotify(bool t)
 //传递结束信息
 void Calculator::sendFinish(const char *cnt)
 {
-    char temp[6];
-    strcpy(temp, cnt);
-    temp[index]++;
-    sendMessager->send(message(message::headEnum::finish, temp));
+    string temp;
+    temp += to_string(finish_index);
+    temp += '|';
+    int dif = temp.size();
+    temp += cnt;
+    temp[index + dif - 1]++;
+    sendMessager->send(message(message::headEnum::finish, temp.c_str()));
 }
 //检查是否全部结束
 bool Calculator::checkFinish(const char *cnt) const
 {
-    for (int i = 1; i <= totalProgramCount; i++)
-        if (cnt[i] < '2')
+    for (int i = 0; i < totalProgramCount; i++)
+        if (cnt[i] < '1')
             return false;
     return true;
 }
@@ -190,6 +193,7 @@ void Calculator::doAsync(condition_variable &cv, unique_lock<mutex> &lck)
     setFinishAndNotify(true, false);
     sendFinish();
     cv.wait(lck);
+    finish_index++;
     sendMessager->runIos();
     sendMessager->resetIos();
     setFinishAndNotify(false, true);

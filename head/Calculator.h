@@ -27,6 +27,7 @@ public:
     // 用于finish的同步的flag
     int index, totalProgramCount;
     bool is_finished, is_notify;
+    int finish_index = 0; // 用于区别不同轮次发送的finish消息的标号
     bool select_flag = false;
     int select_idx;
     //统计信息对象
@@ -35,6 +36,8 @@ public:
     dataReader &reader;
     //消息发送对象
     client *sendMessager;
+    //决赛预先零件通信
+    unordered_map<int, int> partKeyMap; //不需要保证线程安全
     //决赛统计数据
     FinalCompetitionData data;
     //读取数据，并记录时间
@@ -53,7 +56,7 @@ public:
     //构造函数
     Calculator(TotalData &totalData, dataReader &reader, client *sendMessager = nullptr);
     //传递结束信息
-    void sendFinish(const char *cnt = " 0000");
+    void sendFinish(const char *cnt = "0000");
     //检查是否全部结束
     bool checkFinish(const char *cnt) const;
     //发送统计信息

@@ -125,10 +125,38 @@ CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzj/cnSoftFinal/cpp/Calculator.cpp -o CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.s
 
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o: ../cpp/FinalCompetitionCalculator.cpp
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o -c /home/wzj/cnSoftFinal/cpp/FinalCompetitionCalculator.cpp
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wzj/cnSoftFinal/cpp/FinalCompetitionCalculator.cpp > CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.i
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzj/cnSoftFinal/cpp/FinalCompetitionCalculator.cpp -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.s
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o: ../cpp/FinalCompetitionData.cpp
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o -c /home/wzj/cnSoftFinal/cpp/FinalCompetitionData.cpp
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wzj/cnSoftFinal/cpp/FinalCompetitionData.cpp > CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.i
+
+CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzj/cnSoftFinal/cpp/FinalCompetitionData.cpp -o CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.s
+
 CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o: ../cpp/Part.cpp
 CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o -c /home/wzj/cnSoftFinal/cpp/Part.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o: ../cpp/PartData.cpp
 CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o -c /home/wzj/cnSoftFinal/cpp/PartData.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.i: cmake_force
@@ -153,10 +181,24 @@ CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzj/cnSoftFinal/cpp/PartData.cpp -o CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.s
 
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o: ../cpp/PartSaleData.cpp
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o -c /home/wzj/cnSoftFinal/cpp/PartSaleData.cpp
+
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wzj/cnSoftFinal/cpp/PartSaleData.cpp > CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.i
+
+CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wzj/cnSoftFinal/cpp/PartSaleData.cpp -o CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.s
+
 CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o: ../cpp/QueryResponser.cpp
 CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o -c /home/wzj/cnSoftFinal/cpp/QueryResponser.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o: ../cpp/TotalData.cpp
 CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o -c /home/wzj/cnSoftFinal/cpp/TotalData.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o: ../cpp/Utils.cpp
 CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o -c /home/wzj/cnSoftFinal/cpp/Utils.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.i: cmake_force
@@ -198,7 +240,7 @@ CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o: ../cpp/ZipOrder.cpp
 CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.o -c /home/wzj/cnSoftFinal/cpp/ZipOrder.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.i: cmake_force
@@ -212,7 +254,7 @@ CMakeFiles/cnsoftbei.dir/cpp/ZipOrder.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o: ../cpp/ZipPart.cpp
 CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.o -c /home/wzj/cnSoftFinal/cpp/ZipPart.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.i: cmake_force
@@ -226,7 +268,7 @@ CMakeFiles/cnsoftbei.dir/cpp/ZipPart.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o: ../cpp/client.cpp
 CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/client.cpp.o -c /home/wzj/cnSoftFinal/cpp/client.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/client.cpp.i: cmake_force
@@ -240,7 +282,7 @@ CMakeFiles/cnsoftbei.dir/cpp/client.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o: ../cpp/dataReader.cpp
 CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.o -c /home/wzj/cnSoftFinal/cpp/dataReader.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.i: cmake_force
@@ -254,7 +296,7 @@ CMakeFiles/cnsoftbei.dir/cpp/dataReader.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o: ../cpp/message.cpp
 CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/message.cpp.o -c /home/wzj/cnSoftFinal/cpp/message.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/message.cpp.i: cmake_force
@@ -268,7 +310,7 @@ CMakeFiles/cnsoftbei.dir/cpp/message.cpp.s: cmake_force
 CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o: CMakeFiles/cnsoftbei.dir/flags.make
 CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o: ../cpp/server.cpp
 CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o: CMakeFiles/cnsoftbei.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o -MF CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o.d -o CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o -c /home/wzj/cnSoftFinal/cpp/server.cpp
 
 CMakeFiles/cnsoftbei.dir/cpp/server.cpp.i: cmake_force
@@ -285,8 +327,11 @@ cnsoftbei_OBJECTS = \
 "CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o" \
+"CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o" \
+"CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o" \
+"CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o" \
 "CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o" \
@@ -304,8 +349,11 @@ cnsoftbei_EXTERNAL_OBJECTS =
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/AdvancedCalculator.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/BrandData.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/Calculator.cpp.o
+../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionCalculator.cpp.o
+../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/FinalCompetitionData.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/Part.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/PartData.cpp.o
+../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/PartSaleData.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/QueryResponser.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/TotalData.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/Utils.cpp.o
@@ -317,7 +365,7 @@ cnsoftbei_EXTERNAL_OBJECTS =
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/cpp/server.cpp.o
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/build.make
 ../bin/cnsoftbei: CMakeFiles/cnsoftbei.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ../bin/cnsoftbei"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wzj/cnSoftFinal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ../bin/cnsoftbei"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cnsoftbei.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

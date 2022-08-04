@@ -1,3 +1,0 @@
-D:/ClionCode/ccc/cmake-build-debug/CMakeFiles/cnsoftbei.dir
-D:/ClionCode/ccc/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ClionCode/ccc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

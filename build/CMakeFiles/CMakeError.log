@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_80ce3/fast && /usr/bin/make  -f CMakeFiles/cmTC_80ce3.dir/build.make CMakeFiles/cmTC_80ce3.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea055/fast && /usr/bin/make  -f CMakeFiles/cmTC_ea055.dir/build.make CMakeFiles/cmTC_ea055.dir/build
 make[1]: 进入目录“/home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_80ce3.dir/src.c.o
-/usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -O3   -o CMakeFiles/cmTC_80ce3.dir/src.c.o -c /home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_80ce3
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80ce3.dir/link.txt --verbose=1
-/usr/bin/gcc  -O3   -rdynamic CMakeFiles/cmTC_80ce3.dir/src.c.o -o cmTC_80ce3 
-/usr/bin/ld: CMakeFiles/cmTC_80ce3.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_ea055.dir/src.c.o
+/usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -O3   -o CMakeFiles/cmTC_ea055.dir/src.c.o -c /home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea055
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea055.dir/link.txt --verbose=1
+/usr/bin/gcc  -O3   -rdynamic CMakeFiles/cmTC_ea055.dir/src.c.o -o cmTC_ea055 
+/usr/bin/ld: CMakeFiles/cmTC_ea055.dir/src.c.o: in function `main':
 src.c:(.text.startup+0x29): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text.startup+0x32): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text.startup+0x3b): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text.startup+0x46): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_80ce3.dir/build.make:99：cmTC_80ce3] 错误 1
+make[1]: *** [CMakeFiles/cmTC_ea055.dir/build.make:99：cmTC_ea055] 错误 1
 make[1]: 离开目录“/home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:127：cmTC_80ce3/fast] 错误 2
+make: *** [Makefile:127：cmTC_ea055/fast] 错误 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_bcb8c/fast && /usr/bin/make  -f CMakeFiles/cmTC_bcb8c.dir/build.make CMakeFiles/cmTC_bcb8c.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e5d01/fast && /usr/bin/make  -f CMakeFiles/cmTC_e5d01.dir/build.make CMakeFiles/cmTC_e5d01.dir/build
 make[1]: 进入目录“/home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_bcb8c.dir/CheckFunctionExists.c.o
-/usr/bin/gcc   -O3  -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_bcb8c.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
-Linking C executable cmTC_bcb8c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcb8c.dir/link.txt --verbose=1
-/usr/bin/gcc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_bcb8c.dir/CheckFunctionExists.c.o -o cmTC_bcb8c  -lpthreads 
+Building C object CMakeFiles/cmTC_e5d01.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -O3  -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_e5d01.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e5d01
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5d01.dir/link.txt --verbose=1
+/usr/bin/gcc  -O3  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_e5d01.dir/CheckFunctionExists.c.o -o cmTC_e5d01  -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_bcb8c.dir/build.make:99：cmTC_bcb8c] 错误 1
+make[1]: *** [CMakeFiles/cmTC_e5d01.dir/build.make:99：cmTC_e5d01] 错误 1
 make[1]: 离开目录“/home/wzj/cnSoftFinal/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:127：cmTC_bcb8c/fast] 错误 2
+make: *** [Makefile:127：cmTC_e5d01/fast] 错误 2
 
 
 
