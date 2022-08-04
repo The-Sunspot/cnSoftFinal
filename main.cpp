@@ -62,15 +62,15 @@ int main(int argc, char *argv[])
     // Calculator calculator(totalData, reader);
     // AdvancedCalculator calculator(totalData, reader);
 
-    //FinalCompetitionCalculator calculator(totalData, reader);
-    //7027145.477142
-    FinalCompetitionCalculator calculator({1,1},"WRAP JAR",totalData, reader);
+    // FinalCompetitionCalculator calculator(totalData, reader);
+    // 7027145.477142
+    FinalCompetitionCalculator calculator({2, 3}, "WRAP JAR", totalData, reader);
     //接发信息类实例，
     server loadMessager(serverPort[index], cv, calculator, totalData);
     client *sendMessager = nullptr; // 1号实例顺序不同，暂不能赋值
 
     //查询响应器
-    //QueryResponser queryResponser(calculator, totalData);
+    // QueryResponser queryResponser(calculator, totalData);
 
     string s;
 
@@ -166,16 +166,16 @@ int main(int argc, char *argv[])
 
         if (calculator.select_idx == calculator.index)
         {
-            //queryResponser.printSaleInfo();
-            //queryResponser.randomSelect();
+            // queryResponser.printSaleInfo();
+            // queryResponser.randomSelect();
             //交互部分
-           // cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
-            //cout
+            // cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
+            // cout
             //    << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
             //    << R"('select c/container {con}' to query container {con},')" << endl
             //    << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
             //    << endl;
-            //cout << "input:";
+            // cout << "input:";
             // interactThread.join();
             cv.wait(lck);
         }
@@ -199,16 +199,16 @@ int main(int argc, char *argv[])
 
         if (calculator.select_idx == calculator.index)
         {
-//            queryResponser.printSaleInfo();
-//            queryResponser.randomSelect();
+            //            queryResponser.printSaleInfo();
+            //            queryResponser.randomSelect();
             //交互部分
-//            cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
-//            cout
-//                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
-//                << R"('select c/container {con}' to query container {con},')" << endl
-//                << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
-//                << endl;
-//            cout << "input:";
+            //            cout << R"(calculate over, input 'q' or 'quit' to quit)" << endl;
+            //            cout
+            //                << R"(input 'random' do random query, 'select b/brand {a}{b}' to query brand {a}{b},)" << endl
+            //                << R"('select c/container {con}' to query container {con},')" << endl
+            //                << R"('select b/brand {a}{b} c/container {con}' or 'select c/container {con} b/brand {a}{b}' to query brand{a}{b} and container {con}.)"
+            //                << endl;
+            //            cout << "input:";
             // interactThread.join();
             cv.wait(lck);
         }

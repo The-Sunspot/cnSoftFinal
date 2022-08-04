@@ -11,7 +11,6 @@ void FinalCompetitionCalculator::doCalculate(condition_variable &cv, unique_lock
 
     //本地预处理
     {
-
         //计时
         auto preprocessBegin = std::chrono::steady_clock::now();
 
