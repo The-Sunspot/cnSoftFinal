@@ -28,12 +28,16 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                     }
                                     case message::load:{
                                         //读取同步
+                                        if(calculator.reader.load_flag)
+                                          continue;
                                         calculator.reader.load_flag=true;
                                         cv.notify_one();
                                         break;
                                     }
                                     case message::start:{
                                         //计算同步
+                                        if(calculator.select_flag)
+                                          continue;
                                         calculator.select_flag=true;
                                         int idx=m.getBody()[0]-'0';
                                         // cout<<"select_idx:"<<idx<<endl;
