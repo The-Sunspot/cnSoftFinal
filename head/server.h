@@ -27,6 +27,8 @@ private:
     char msgFromClient[bufferSize]{};
     char msgToClient[bufferSize]{};
 
+    unordered_map<int, int> has_notify; //标记某个标号是否已经notify过
+
     //统计类的指针
     TotalData &totalData;
 

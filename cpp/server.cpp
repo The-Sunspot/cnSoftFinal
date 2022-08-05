@@ -53,11 +53,11 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                     }
                                     case message::finish:{
                                         //已被通知，忽略
-                                        if(calculator.is_notify)
-                                            break;
+                                        // if(calculator.is_notify)
+                                        //     break;
                                             //没结束，忽略
-                                        else if(!calculator.is_finished)
-                                            continue;
+                                        // else if(!calculator.is_finished)
+                                        //     continue;
                                         
                                         string temp=m.getBody();
                                         int len = temp.length(), dif;
@@ -72,23 +72,34 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         // cout<<"idx::"<<idx<<endl;
                                         temp=temp.substr(dif);
                                         // cout<<"cnt::"<<temp<<endl;
+                                        // cout<<"idx:"<<idx<<" is_notify:"<<calculator.is_notify.count(idx)<<endl;
+                                        // cout<<"idx:"<<idx<<" is_finished:"<<calculator.is_finished.count(idx)<<endl;
 
+                                        //已被通知，忽略
+                                        if(calculator.is_notify.count(idx))
+                                            continue;
+                                            //没结束，忽略
+                                        if(!calculator.is_finished.count(idx))
+                                            continue;
                                         if(calculator.finish_index!=idx)//finish标号与当前的同步标号不同，则直接舍弃
-                                          continue;
+                                            continue;
                                         //检查是否满足同步条件
                                         if(calculator.checkFinish(temp.c_str()))
                                         {
+                                            if(has_notify.count(idx))
+                                              continue;
                                             //转发
-                                            calculator.sendFinish(temp.c_str());
+                                            calculator.sendFinish(temp.c_str(),idx);
                                             //通知
                                             // calculator.setNotify(true);
                                             cv.notify_one();
+                                            // cout<<"notify:"<<idx<<"!"<<endl;
+                                            has_notify[idx]=1;
                                         }
-                                            //已经结束
-                                        else if(calculator.is_finished)
+                                        else if(calculator.is_finished.count(idx))//已经结束
                                         {
                                             //转发
-                                            calculator.sendFinish(temp.c_str());
+                                            calculator.sendFinish(temp.c_str(),idx);
                                         }
                                         break;
                                     }

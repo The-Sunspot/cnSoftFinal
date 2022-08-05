@@ -13,7 +13,7 @@ void FinalCompetitionCalculator::doCalculate(condition_variable &cv, unique_lock
     {
         //计时
         auto preprocessBegin = std::chrono::steady_clock::now();
-
+        cout << endl;
         cout << "preprocessing.." << endl;
         this->preprocess(cv, lck);
 

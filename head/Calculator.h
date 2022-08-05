@@ -26,7 +26,7 @@ private:
 public:
     // 用于finish的同步的flag
     int index, totalProgramCount;
-    bool is_finished, is_notify;
+    unordered_map<int, int> is_finished, is_notify;
     int finish_index = 0; // 用于区别不同轮次发送的finish消息的标号
     bool select_flag = false;
     int select_idx;
@@ -57,7 +57,7 @@ public:
     //构造函数
     Calculator(TotalData &totalData, dataReader &reader, client *sendMessager = nullptr);
     //传递结束信息
-    void sendFinish(const char *cnt = "0000");
+    void sendFinish(const char *cnt = "0000", int idx = -1);
     //检查是否全部结束
     bool checkFinish(const char *cnt) const;
     //发送统计信息

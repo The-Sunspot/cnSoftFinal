@@ -139,6 +139,7 @@ int main(int argc, char *argv[])
         //同步
         cv.wait(lck);
         //建立连接
+        cout << endl;
         if (sendMessager == nullptr)
             sendMessager = new client(serverPort[n], serverPort[index]);
         //通知

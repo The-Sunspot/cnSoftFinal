@@ -13,8 +13,8 @@ Calculator::Calculator(TotalData &totalData, dataReader &reader, client *sendMes
 {
     index = reader.index;
     totalProgramCount = reader.totalProgramCount;
-    is_finished = false;
-    is_notify = false;
+    // is_finished = false;
+    // is_notify = false;
 };
 //读取数据，并记录时间
 void Calculator::loadDatas()
@@ -137,24 +137,26 @@ void Calculator::transferUndersalePartData(message m)
     sendMessager->send(m);
 }
 //修改flag量
-void Calculator::setFinishAndNotify(bool f, bool t)
-{
-    lock_guard lg(mtx);
-    is_finished = f;
-    is_notify = t;
-}
+// void Calculator::setFinishAndNotify(bool f, bool t)
+// {
+//     lock_guard lg(mtx);
+//     is_finished = f;
+//     is_notify = t;
+// }
 //修改flag量
-void Calculator::setNotify(bool t)
-{
-    lock_guard lg(mtx);
-    is_notify = t;
-}
+// void Calculator::setNotify(bool t)
+// {
+//     lock_guard lg(mtx);
+//     is_notify = t;
+// }
 
 //传递结束信息
-void Calculator::sendFinish(const char *cnt)
+void Calculator::sendFinish(const char *cnt, int idx)
 {
     string temp;
-    temp += to_string(finish_index);
+    if (idx == -1)
+        idx = finish_index;
+    temp += to_string(idx);
     temp += '|';
     int dif = temp.size();
     temp += cnt;
@@ -190,13 +192,14 @@ void Calculator::doAsync(condition_variable &cv, unique_lock<mutex> &lck)
 {
     sendMessager->runIos();
     sendMessager->resetIos();
-    setFinishAndNotify(true, false);
+    // setFinishAndNotify(true, false);
+    is_finished[finish_index] = 1;
     sendFinish();
     cv.wait(lck);
-    finish_index++;
     sendMessager->runIos();
     sendMessager->resetIos();
-    setFinishAndNotify(false, true);
+    is_notify[finish_index++] = 1;
+    // setFinishAndNotify(false, true);
 }
 
 void Calculator::addPartKey(int key)
