@@ -504,24 +504,17 @@ std::tuple<std::string, std::pair<int, int>, std::string> Utils::judgeInputExten
 }
 
 std::string Utils::getRandomContainer() {
-    //随机container
-    std::vector<std::string>containers={"WRAP JAR","MED DRUM","SM BOX","JUMBO BOX","LG BAG","SM CAN",
-                              "MED CAN","WRAP DRUM","LG PACK","SM JAR","WRAP PACK","MED BAG","LG DRUM",
-                              "JUMBO JAR","JUMBO PKG","MED PKG","MED CASE","LG BOX","WRAP CAN","JUMBO BAG",
-                              "WRAP BOX","SM CASE","LG CASE","LG PKG","LG CAN","MED JAR","LG JAR","JUMBO PACK",
-                              "SM DRUM","SM PACK","SM BAG","MED BOX","MED PACK","SM PKG","JUMBO CAN","WRAP BAG",
-                              "JUMBO CASE","WRAP PKG","JUMBO DRUM","WRAP CASE"
-    };
-    //随机数发生器
-    std::default_random_engine randomEngine(time(nullptr));
-    std::uniform_int_distribution<int> brandGen(1,5);
+    std::random_device rd;
+    std::random_device rand_dev;
+    std::mt19937 randomEngine(rand_dev());
     std::uniform_int_distribution<int> containerGen(0,containers.size()-1);
-    std::pair<int,int> brand={brandGen(randomEngine),brandGen(randomEngine)};
     return containers[containerGen(randomEngine)];
 }
 
 std::pair<int, int> Utils::getRandomBrand() {
-    std::default_random_engine randomEngine(time(nullptr));
+    std::random_device rd;
+    std::random_device rand_dev;
+    std::mt19937 randomEngine(rand_dev());
     std::uniform_int_distribution<int> brandGen(1,5);
     return {brandGen(randomEngine),brandGen(randomEngine)};
 }
@@ -561,3 +554,62 @@ std::pair<PartSaleData,int> Utils::unzipPartSaleData(const char *s) {
     return rec;
 }
 
+std::string Utils::zipStart(int idx,const std::string& container,std::pair<int,int>brand) {
+    return std::to_string(idx)+'|'+container+'|'+std::to_string(brand.first)+std::to_string(brand.second)+'|';
+}
+
+std::tuple<int, std::string, std::pair<int, int>> Utils::unZipStart(const char *s) {
+    int cnt=0;
+    int idx=0;
+    std::string con;
+    std::pair<int,int> brand={0,0};
+    for(int i=0;;i++){
+        char ch=s[i];
+        if(ch=='|'){
+            cnt++;
+            if(cnt==3)  break;
+        }
+        else{
+            if(cnt==0){
+                idx=idx*10+ch-'0';
+            }
+            else if(cnt==1){
+                con+=ch;
+            }
+            else if(cnt==2){
+                if(!brand.first)    brand.first=ch-'0';
+                else    brand.second=ch-'0';
+            }
+        }
+    }
+    return {idx,con,brand};
+}
+
+std::tuple<int, std::string, std::pair<int, int>> Utils::unZipStart(const std::string &s) {
+    return Utils::unZipStart(s.c_str());
+}
+
+std::tuple<bool, std::pair<int, int>, std::string> Utils::dealInputParm(const std::string &s) {
+    auto input=split(s);
+    if(input.size()!=3) return {false,{0,0},""};
+    if(input[1].size()!=2) return {false,{0,0},""};
+    if(input[1][0]<'1'||input[1][0]>'5'||input[1][1]<'1'||input[1][1]>'5')
+        return {false,{0,0},""};
+    std::pair<int,int> brand={input[1][0]-'0',input[1][1]-'0'};
+    std::string container=input[2];
+    for(auto &con:containers){
+        if(con==container){
+            return {true,brand,con};
+        }
+    }
+    return {false,{0,0},""};
+}
+
+
+const  std::vector<std::string>  Utils::containers={"WRAP JAR", "MED DRUM", "SM BOX", "JUMBO BOX", "LG BAG", "SM CAN",
+         "MED CAN", "WRAP DRUM", "LG PACK", "SM JAR", "WRAP PACK", "MED BAG", "LG DRUM",
+         "JUMBO JAR", "JUMBO PKG", "MED PKG", "MED CASE", "LG BOX", "WRAP CAN", "JUMBO BAG",
+         "WRAP BOX", "SM CASE", "LG CASE", "LG PKG", "LG CAN", "MED JAR", "LG JAR", "JUMBO PACK",
+         "SM DRUM", "SM PACK", "SM BAG", "MED BOX", "MED PACK", "SM PKG", "JUMBO CAN", "WRAP BAG",
+         "JUMBO CASE", "WRAP PKG", "JUMBO DRUM", "WRAP CASE"
+        };

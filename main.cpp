@@ -60,11 +60,9 @@ int main(int argc, char *argv[])
     // AdvancedCalculator为Calculator子类，是演变后的计算类，更快空间更小
     // 详情请见类代码注释
     // Calculator calculator(totalData, reader);
-    // AdvancedCalculator calculator(totalData, reader);
-
     // FinalCompetitionCalculator calculator(totalData, reader);
-    // 7027145.477142
-    FinalCompetitionCalculator calculator({4, 2}, "LG BOX", totalData, reader);
+
+    FinalCompetitionCalculator calculator( totalData, reader);
     //接发信息类实例，
     server loadMessager(serverPort[index], cv, calculator, totalData);
     client *sendMessager = nullptr; // 1号实例顺序不同，暂不能赋值
@@ -95,13 +93,19 @@ int main(int argc, char *argv[])
             }
             else if (!calculator.select_flag)
             {
-                if (s != "select")
+                if (s.substr(0,6)!="select")
                 {
                     cout << "please enter \"select\"!\ninput: ";
                 }
                 else
                 {
-                    sendMessager->sendStart(calculator.index);
+                    auto parm=Utils::dealInputParm(s);
+                    if(get<0>(parm)){
+                        calculator.targetContainer=get<2>(parm);
+                        calculator.targetBrand=get<1>(parm);
+                    }
+                    sendMessager->sendStart(calculator.index,calculator.targetContainer,calculator.targetBrand);
+                    //sendMessager->sendStart(calculator.index);
                     // break;
                 }
             }
@@ -118,8 +122,8 @@ int main(int argc, char *argv[])
                 //queryResponser.dealInteract(s);
             }
             } });
-    interactThread.detach();
 
+    interactThread.detach();
     // load
     if (index != 1)
     {
@@ -159,7 +163,7 @@ int main(int argc, char *argv[])
         //等待同步
         cv.wait(lck);
         //通知
-        sendMessager->sendStart(calculator.select_idx);
+        sendMessager->sendStart(calculator.select_idx,calculator.targetContainer,calculator.targetBrand);
         //计算
         calculator.doCalculate(cv, lck);
 

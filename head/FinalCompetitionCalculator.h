@@ -10,9 +10,7 @@
 #include "FinalCompetitionData.h"
 class FinalCompetitionCalculator : public Calculator{
 public:
-    //查询参数
-    string targetContainer;
-    pair<int,int> targetBrand;
+
 
 
 

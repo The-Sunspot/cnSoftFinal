@@ -17,6 +17,9 @@
 class Utils
 {
 public:
+
+    const static std::vector<std::string>  containers;
+
     //分割字符串，传入分隔符，类似于python的split
     std::vector<std::string> static split(const std::string &str, char ch = ' ');
 
@@ -52,6 +55,10 @@ public:
     //反序列化  char *->ZipPart
     ZipPart static unZipPartString(const char *line);
 
+    std::string static zipStart(int idx,const std::string& container,std::pair<int,int>brand);
+
+    std::tuple<int,std::string,std::pair<int,int>> static unZipStart(const std::string &s);
+    std::tuple<int,std::string,std::pair<int,int>> static unZipStart(const char *s);
     //反序列化 string->pair<id,<count,sales>>
     std::pair<int, std::pair<int, int>> static unZipTotalData(const std::string &data);
     //反序列化 char*->pair<id,<count,sales>>
@@ -75,6 +82,8 @@ public:
 
     static std::string getRandomContainer();
     static std::pair<int,int> getRandomBrand();
+
+    static std::tuple<bool,std::pair<int,int>,std::string> dealInputParm(const std::string &s);
 };
 
 #endif // CNSOFTBEI_UTILS_H

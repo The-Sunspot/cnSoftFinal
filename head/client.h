@@ -43,7 +43,7 @@ public:
 
     void sendConnect();
     void sendLoad();
-    void sendStart(int idx);
+    void sendStart(int idx,const string &con,const pair<int,int>&brand);
     void sendPart(ZipPart &zippart);
     void sendPartSaleData(PartSaleData &partSaleData);
     void sendFinalAns(long double ans);

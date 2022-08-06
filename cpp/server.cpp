@@ -39,9 +39,13 @@ server::server(int p, condition_variable &cv, Calculator &calculator, TotalData 
                                         if(calculator.select_flag)
                                           continue;
                                         calculator.select_flag=true;
-                                        int idx=m.getBody()[0]-'0';
-                                        // cout<<"select_idx:"<<idx<<endl;
+                                        auto param=Utils::unZipStart(m.getBody());
+                                        int idx=get<0>(param);
+                                        string con=get<1>(param);
+                                        pair<int,int> brand=get<2>(param);
                                         calculator.select_idx=idx;
+                                        calculator.targetBrand=brand;
+                                        calculator.targetContainer=con;
                                         cv.notify_one();
                                         break;
                                     }

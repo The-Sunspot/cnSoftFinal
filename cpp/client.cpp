@@ -31,12 +31,13 @@ void client::sendLoad()
 {
     this->send(message(message::headEnum::load));
 }
-void client::sendStart(int idx)
+void client::sendStart(int idx,const string &con,const pair<int,int>&brand)
 {
-    this->send(message(message::headEnum::start, to_string(idx).c_str()));
+    this->send(message(message::headEnum::start, Utils::zipStart(idx,con,brand).c_str()));
 }
 void client::sendPart(ZipPart &zippart)
 {
+
     send(message(message::headEnum::part, Utils::zipPartToString(zippart).c_str()));
 }
 

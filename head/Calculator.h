@@ -41,6 +41,9 @@ public:
     std::mutex keymap_mtx;
     //决赛统计数据
     FinalCompetitionData data;
+    //查询参数
+    string targetContainer;
+    pair<int,int> targetBrand;
     //读取数据，并记录时间
     void loadDatas();
     //修改flag量
