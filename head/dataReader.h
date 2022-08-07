@@ -14,11 +14,19 @@
 class dataReader
 {
 private:
-    //零件表可能位置
-    std::vector<std::string> partFileNames{
-        R"(../data/part.tbl)",
-        R"(data/part.tbl)",
-        R"(part.tbl)"};
+    //数据可能位置
+    std::vector<std::string> folderPath{
+        R"(../data/)",
+        R"(data/)",
+        R"()"};
+    //零件表名称——总
+    std::string partFileMul="part.tbl";
+    //零件表名称——分
+    std::string partFileDiv="div_part_";
+    //订单表名称——总
+    std::string lineitemFileMul="lineitem.tbl";
+    //订单表名称——分
+    std::string lineitemFileDiv="div_lineitem_";
     //订单表可能位置
     std::vector<std::string> orderFileName{
         R"(../data/lineitem.tbl)",

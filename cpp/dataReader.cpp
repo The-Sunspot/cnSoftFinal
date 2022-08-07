@@ -18,12 +18,14 @@ using namespace std;
 //初始化
 dataReader::dataReader(int index, int n, bool isTesting) : totalProgramCount(n), index(index)
 {
-    //测试用数据集，可以忽略
-    if (isTesting)
-    {
-        partFileNames[0] = R"(../data/testGoods)";
-        orderFileName[0] = R"(../data/testSales.txt)";
-    }
+    // //测试用数据集，可以忽略
+    // if (isTesting)
+    // {
+    //     partFileNames[0] = R"(../data/testGoods)";
+    //     orderFileName[0] = R"(../data/testSales.txt)";
+    // }
+    partFileDiv+=to_string(this->index);
+    lineitemFileDiv+=to_string(this->index);
 }
 
 //读入零件
@@ -32,12 +34,25 @@ int dataReader::loadParts()
     cout << "\nstart load parts data" << endl;
     //查找零件文件
     std::ifstream partFile;
-    for (auto &file : partFileNames)
+    //是否分别读入
+    bool isDiv=false;
+    for (auto &folder : folderPath)
     {
-        partFile.open(file, std::ios::in);
-        if (partFile.good())
+        partFile.open(folder+partFileDiv, std::ios::in);
+        if (partFile.good()){
+            isDiv=true;
             break;
+        }
     }
+    if(!isDiv){
+        for (auto &folder : folderPath)
+        {
+            partFile.open(folder+partFileMul, std::ios::in);
+            if (partFile.good())
+                break;
+        }
+    }
+    
     //未找到
     if (partFile.bad())
     {
@@ -47,23 +62,41 @@ int dataReader::loadParts()
     std::string s;
 
     auto st = clock();
-    while (getline(partFile, s))
-    {
-        cnt++;
-        //显示进度条
-        if (cnt % 200000 == 0)
+    if(isDiv){
+        cout<<"load mod: divide"<<endl;
+        while (getline(partFile, s))
         {
-            cout << Utils::getTag(cnt / 200000) << endl;
+            cnt++;
+            if (cnt % 50000 == 0)
+                cout << Utils::getTag(cnt / 50000) << endl;
+            //调用工具类解析
+            auto part = Utils::loadPart(s);
+            //插入
+            partIdHash[part.pPartkey] = parts.size();
+            parts.emplace_back(part);
         }
-        // 4个实例读入不同数据
-        if (cnt % totalProgramCount + 1 != index)
-            continue;
-        //调用工具类解析
-        auto part = Utils::loadPart(s);
-        //插入
-        partIdHash[part.pPartkey] = parts.size();
-        parts.emplace_back(part);
     }
+    else{
+        cout<<"load mod: multiple"<<endl;
+        while (getline(partFile, s))
+        {
+            cnt++;
+            //显示进度条
+            if (cnt % 200000 == 0)
+            {
+                cout << Utils::getTag(cnt / 200000) << endl;
+            }
+            // 4个实例读入不同数据
+            if (cnt % totalProgramCount + 1 != index)
+                continue;
+            //调用工具类解析
+            auto part = Utils::loadPart(s);
+            //插入
+            partIdHash[part.pPartkey] = parts.size();
+            parts.emplace_back(part);
+        }
+    }
+    
     auto ed = clock();
     //输出
     cout << "\n-------------------------\n";
@@ -79,11 +112,23 @@ int dataReader::loadOrders()
     cout << "\nstart load orders data" << endl;
     //查找订单文件
     std::ifstream partFile;
-    for (auto &file : orderFileName)
+    //是否分别读入
+    bool isDiv=false;
+    for (auto &folder : folderPath)
     {
-        partFile.open(file, std::ios::in);
-        if (partFile.good())
+        partFile.open(folder+lineitemFileDiv, std::ios::in);
+        if (partFile.good()){
+            isDiv=true;
             break;
+        }
+    }
+    if(!isDiv){
+        for (auto &folder : folderPath)
+        {
+            partFile.open(folder+lineitemFileMul, std::ios::in);
+            if (partFile.good())
+                break;
+        }
     }
     //未找到
     if (partFile.bad())
@@ -93,22 +138,43 @@ int dataReader::loadOrders()
     int cnt = 0;
     std::string s;
     auto st = clock();
-    while (getline(partFile, s))
-    {
-        cnt++;
-        //显示进度条
-        if (cnt % 6000000 == 0)
+    if(isDiv){
+        cout<<"load mod: divide"<<endl;
+        while (getline(partFile, s))
         {
-            cout << Utils::getTag(cnt / 6000000) << endl;
+            cnt++;
+            //显示进度条
+            if (cnt % 1500000 == 0)
+            {
+                cout << Utils::getTag(cnt / 1500000) << endl;
+            }
+            //调用工具类解析
+            auto zipOrder = Utils::loadOrder(s);
+            //插入
+            orders.emplace_back(zipOrder);
         }
-        // 4个实例读入不同数据
-        if (cnt % totalProgramCount + 1 != index)
-            continue;
-        //调用工具类解析
-        auto zipOrder = Utils::loadOrder(s);
-        //插入
-        orders.emplace_back(zipOrder);
     }
+    else{
+        cout<<"load mod: multiple"<<endl;
+        while (getline(partFile, s))
+        {
+            cnt++;
+            //显示进度条
+            if (cnt % 6000000 == 0)
+            {
+                cout << Utils::getTag(cnt / 6000000) << endl;
+            }
+            // 4个实例读入不同数据
+            if (cnt % totalProgramCount + 1 != index)
+                continue;
+            //调用工具类解析
+            auto zipOrder = Utils::loadOrder(s);
+            //插入
+            orders.emplace_back(zipOrder);
+        }
+    }
+    
+    
     auto ed = clock();
     //输出
     cout << "\n-------------------------\n";

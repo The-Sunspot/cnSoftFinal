@@ -64,12 +64,14 @@ void FinalCompetitionCalculator::doCalculate(condition_variable &cv, unique_lock
     auto ed = std::chrono::steady_clock::now();
     std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(ed - be);
     cout << "calculate module time cost:" << time_span.count() << "s.\n";
-    cout << "----------------------------------------------\n";
-    cout << "chosen parms: Brand#" << this->targetBrand.first << this->targetBrand.second
-         << "  Container: " << this->targetContainer << endl;
-    cout << fixed << setprecision(10)
-         << "selected answer: "
-         << this->data.underSales / 7 << endl;
+    if(this->index==this->select_idx){
+        cout << "----------------------------------------------\n";
+        cout << "chosen parms: Brand#" << this->targetBrand.first << this->targetBrand.second
+            << "  Container: " << this->targetContainer << endl;
+        cout << fixed << setprecision(10)
+            << "selected answer: "
+            << this->data.underSales / 7 << endl;
+    }
 }
 
 void FinalCompetitionCalculator::localCalculate()

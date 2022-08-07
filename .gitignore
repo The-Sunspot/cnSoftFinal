@@ -2,6 +2,15 @@
 /data/lineitem.tbl
 /data/lineitem2.tbl
 /data/part.tbl
+/data/div_part_1
+/data/div_part_2
+/data/div_part_3
+/data/div_part_4
+/data/div_lineitem_1
+/data/div_lineitem_2
+/data/div_lineitem_3
+/data/div_lineitem_4
 /graph/
+/multiData/
 build
 cmake-build-debug
