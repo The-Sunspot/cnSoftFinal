@@ -62,6 +62,7 @@ int dataReader::loadParts()
     std::string s;
 
     auto st = clock();
+    parts.reserve(500000+50);
     if(isDiv){
         cout<<"load mod: divide"<<endl;
         while (getline(partFile, s))
@@ -138,6 +139,8 @@ int dataReader::loadOrders()
     int cnt = 0;
     std::string s;
     auto st = clock();
+    
+    orders.reserve(15000000+10);
     if(isDiv){
         cout<<"load mod: divide"<<endl;
         while (getline(partFile, s))
